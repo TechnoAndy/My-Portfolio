@@ -2,9 +2,10 @@
 
 Hello World, I am a full stack web developer in the making.
 
-First project for Microverse Full Stack Program Hello Microverse.
-
-Built With HTML CSS Visual Studio
+Built With 
+HTML 
+CSS 
+Visual Studio
 
 Getting Started 
 
