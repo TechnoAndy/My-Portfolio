@@ -26,7 +26,7 @@ li {
   text-decoration: none;
   display: flex;
   align-items: center;
-  text-align: center;    
+  text-align: center; 
 }
 
 .content-section {
@@ -71,7 +71,7 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
-} 
+}
 
 .social-media {
   text-align: left;
