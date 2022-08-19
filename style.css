@@ -6,12 +6,13 @@
   justify-content: space-between;
   padding: 20px;
   background-color: #ffff;
-  color: #6070FF;
+  color: #6070ff;
   text-decoration: none;
 }
 
 li {
-  list-style: none;  
+  list-style: none;
+  
 }
 
 .nav-logo {
@@ -27,7 +28,7 @@ li {
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .content-section {
@@ -102,7 +103,7 @@ li {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7F8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -118,4 +119,3 @@ li {
   display: inline;
   margin-right: 15px;
 }
-
