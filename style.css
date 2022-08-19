@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px;
   margin-left: 0;
   background-color: #ffff;
   color: #6070ff;
@@ -41,7 +40,6 @@ li {
 
 .content {
   padding: 80px 20px;
-  
 }
 
 .content-text {
@@ -59,26 +57,6 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
-  
-  
-}
-
-.social-connect {
-  text-align: left;
-  position: static;
-  width: 117px;
-  height: 2px;
-  font-family: 'poppins', sans-serif !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #7f8cff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
 
 .content-text-p {
@@ -94,7 +72,6 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
-  
 }
 
 .social-connect {
@@ -113,7 +90,7 @@ li {
   flex-grow: 0;
   margin-top: 25px;
   margin-bottom: 25px;
-  }
+}
 
 .social-media {
   text-align: left;
