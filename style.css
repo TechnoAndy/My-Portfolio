@@ -4,7 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
+  padding: 0px;
+  margin-left: 0;
   background-color: #ffff;
   color: #6070ff;
   text-decoration: none;
@@ -35,17 +36,18 @@ li {
   background-repeat: no-repeat;
   background-size: 440px;
   background-position-x: 5px;
+  margin-left: 0;
 }
 
 .content {
-  padding: 80px 80px;
+  padding: 80px 20px;
+  
 }
 
 .content-text {
   position: static;
-  width: 320px;
+  width: 327px;
   height: 150px;
-  top: 1px;
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   font-weight: 700;
@@ -57,6 +59,8 @@ li {
   flex: none;
   order: 0;
   flex-grow: 0;
+  
+  
 }
 
 .social-connect {
@@ -80,7 +84,7 @@ li {
 .content-text-p {
   position: static;
   width: 300px;
-  height: 100px;
+  height: 150px;
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -90,7 +94,26 @@ li {
   flex: none;
   order: 1;
   flex-grow: 0;
+  
 }
+
+.social-connect {
+  text-align: left;
+  position: static;
+  width: 117px;
+  height: 2px;
+  font-family: 'poppins', sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  }
 
 .social-media {
   text-align: left;
