@@ -1,6 +1,6 @@
 # My-Portfolio
 
-Hello World, I am a full stack web developer in the making.
+I am a full stack web developer in the making.
 
 Built With 
 HTML 
