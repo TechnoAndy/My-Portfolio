@@ -7,12 +7,9 @@
   color: #6070ff;
   text-decoration: none;
 }
-
 li {
     list-style-type: none;
 }
-  
-
 .nav-logo {
   position: static;
   width: 100px;
