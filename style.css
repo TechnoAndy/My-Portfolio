@@ -12,7 +12,6 @@
 
 li {
   list-style: none;
-  
 }
 
 .nav-logo {
@@ -76,7 +75,7 @@ li {
   flex-grow: 0;
   margin-top: 25px;
   margin-bottom: 25px;
-  }
+}
 
 .content-text-p {
   position: static;
