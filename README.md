@@ -1,32 +1,46 @@
-# My-Portfolio
+# Microver Portfolio Project
 
 I am a full stack web developer in the making.
+This is the story of how I got there.
 
-Built With 
+# Built With 
 HTML 
+
 CSS 
+
 Visual Studio
 
-Getting Started 
 
-This is our second project in the Full Stack program where we must utilize the skills we have learned in the previous lessons and design the sekelton of our portfolio website that will be used when we start to seek employment. This website will have all our projects that we have worked on.
+# Additional tools 
 
-Authors 
+Figma
+
+Github pages
+
+Google
+
+Youtube
+
+# Authors 
+
 👤 Author1
 
 GitHub: TechnoAndy 
 Twitter: @Adiegaardt 
 LinkedIn: http://www.linkedin.com/in/andrea-diegaardt-110203116
 
-🤝 Contributing 
+# 🤝 Contributing 
+
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the issues page.
 
 Show your support Give a ⭐️ if you like this project!
 
-Acknowledgments 
+# Acknowledgments 
 
-A shout out to my team who were my motivation.
+A shout out to the most amazing collaboration team I have ever worked with.
 
-📝 License This project is MIT licensed.
+# 📝 License 
+
+This project is MIT licensed.
