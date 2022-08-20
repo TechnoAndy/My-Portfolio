@@ -125,4 +125,7 @@
   left: 16.67%;
   right: 16.67%;
   font-size: larger;
+  border: none;
+  color: #6070ff;
+  background-color: transparent;
 }
