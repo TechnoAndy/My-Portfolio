@@ -34,7 +34,7 @@
 }
 
 .content-section {
-  background-image: url(background\\(1\).png);
+  background-image: url(background\ \(1\).png);
   background-repeat: no-repeat;
   background-size: 440px;
   background-position-x: 5px;
@@ -312,7 +312,7 @@
   text-align: start;
   justify-content: start;
   margin-left: -34px;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
