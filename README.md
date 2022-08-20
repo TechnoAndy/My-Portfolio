@@ -1,4 +1,4 @@
-# Microver Portfolio Project
+# Microverse Portfolio Project
 
 I am a full stack web developer in the making.
 This is the story of how I got there.
