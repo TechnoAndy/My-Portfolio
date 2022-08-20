@@ -10,15 +10,11 @@
   text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 .nav-logo {
   position: static;
   width: 76px;
-  height: 20px;
-  margin-left: 20px;
+  height: 30px;
+  margin-left: 30px;
   font-family: 'Poppins', sans-serif !important;
   font-style: normal;
   font-weight: 700;
@@ -89,7 +85,9 @@ li {
   order: 0;
   flex-grow: 0;
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 29px;
+  text-decoration: none;
+  list-style: none;
 }
 
 .social-media {
@@ -117,4 +115,14 @@ li {
 .social-media-icons {
   display: inline;
   margin-right: 15px;
+}
+
+.hamburger {
+  text-decoration: none;
+  list-style: absolute;
+  position: fixed;
+  padding-left: 300px;
+  left: 16.67%;
+  right: 16.67%;
+  font-size: larger;
 }
