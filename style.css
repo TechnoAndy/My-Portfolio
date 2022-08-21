@@ -402,6 +402,16 @@ hr {
   padding-top: 10px;
 }
 
+.lang-icon-3 {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2em;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 20px;
+  padding-top: 10px;
+  
+}
+
 .lang-icon-ul {
   list-style: none;
   padding: 12px;
@@ -418,11 +428,4 @@ hr {
 
 .png-2 {
   height: 8px;
-
-  /* justify-content: right;
-  display: inline-block;
-  align-items: flex-end;
-  padding-left: 252px;
-  position: absolute;
-  margin-top: -34px; */
 }
