@@ -92,7 +92,6 @@
   flex-grow: 0;
   border-top-right-radius: right;
   background: white;
-
 }
 
 .social-connect {
@@ -135,8 +134,6 @@
 
 .social-align {
   padding: 0;
-  
-  
 }
 
 .social-media-icons {
@@ -158,14 +155,13 @@
 }
 
 .works {
-display: grid;
-grid-template-rows: auto auto auto auto;
-gap: 70px;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  gap: 70px;
 }
 
-.works-1>div {
+.works-1 > div {
   border: 1px solid black;
-
 }
 /*.works {
   margin-left: 35px;
@@ -179,7 +175,7 @@ gap: 70px;
   border-radius: 24px;
   border: 1px solid #dfe1e6;
   padding: 24px;
-  margin-bottom: 42px; 
+  margin-bottom: 42px;
   width: 330px;
   display: flex;
   flex-direction: column;
@@ -245,6 +241,7 @@ gap: 70px;
 .bullet {
   padding-left: 15px;
   color: #c1c7d0;
+  
 }
 
 .works-content-p {
@@ -260,7 +257,6 @@ gap: 70px;
 }
 
 .work-heading-2 {
-  
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 33px;
@@ -268,7 +264,6 @@ gap: 70px;
   padding: 0 0px;
   width: 190px;
   margin: 0;
-
 }
 
 .btn {
@@ -303,7 +298,6 @@ gap: 70px;
   margin-top: -30px;
   margin-top: -110px;
   margin-left: -20px;
-  
 }
 
 /* .language-card {
@@ -409,8 +403,8 @@ hr {
 }
 
 .lang-icon-ul {
- list-style: none;
- padding: 12px;
+  list-style: none;
+  padding: 12px;
 }
 
 .png {
@@ -425,4 +419,3 @@ hr {
 .png-2 {
   height: 8px;
 }
-
