@@ -37,9 +37,7 @@
   background-image: url(background01.png);
   background-repeat: no-repeat;
   background-size: 410px;
-  /* border-bottom-left-radius: 40px; */
   background-position-x: 5px; 
-  /* border: 1px solid beige; */
 }
 
 .content {
