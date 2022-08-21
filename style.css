@@ -160,7 +160,7 @@
   margin-left: 13px;
 }
 
-.work-card-img { 
+.work-card-img {
   object-fit: cover;
   align-items: center;
   justify-content: center;
@@ -170,7 +170,6 @@
 .align-center-text { /* Tonic */
   padding: 30px 25px;
   margin-top: -40px;
-  
 }
 
 .align-center-text-1 { /* Multi-Post Stories */
@@ -180,13 +179,11 @@
 
 .align-center-text-2 {/* About Myself */
   padding: 30px 5px;
-} 
+}
 
 .about-section-2 {
   padding: 5px 30px;
   width: 310px;
-  /* border-top-right-radius: 24px;
-  border: 1px solid #DFE1E6; */
   width: 300px;
   margin: 0;
   margin-left: 13px;
