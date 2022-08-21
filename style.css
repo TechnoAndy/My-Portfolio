@@ -418,4 +418,11 @@ hr {
 
 .png-2 {
   height: 8px;
+
+  /* justify-content: right;
+  display: inline-block;
+  align-items: flex-end;
+  padding-left: 252px;
+  position: absolute;
+  margin-top: -34px; */
 }
