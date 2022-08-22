@@ -138,6 +138,8 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 50px;
+  margin: 10px;
+  padding: 10px;
 }
 
 .works-1 > div {
@@ -187,7 +189,6 @@
   width: 300px;
   margin-left: 13px;
   margin-top: 5px;
-  margin-left: 0;
 }
 
 .badges {
