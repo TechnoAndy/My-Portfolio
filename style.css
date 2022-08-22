@@ -138,9 +138,6 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 50px;
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
-  padding-top: 20px;
   
 }
 
