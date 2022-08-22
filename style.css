@@ -164,6 +164,8 @@
   justify-content: center;
   margin-top: 12px;
   width: 327px;
+  height: 220px;
+  border-radius: 8px;
 }
 
 .align-center-text { /* Tonic */
@@ -262,6 +264,8 @@
 }
 
 .btn {
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -269,39 +273,21 @@
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
-  color: #396df2;
+  color: var(--color-primary);
   padding: 12px;
   border: 1px solid #6070ff;
   box-sizing: border-box;
-  border-radius: 7px;
+  border-radius: 8px;
   border-color: var(--color-primary);
   background-color: transparent;
 }
 
-.btn:enabled {
-  color: #fff;
-  color: #396df2;
-}
-
-.btn-text:enabled {
-  color: #fff;
-}
-
 .btn:hover {
-  background-color: #396df2;
+  background-color: #6070ff;
   color: #fff;
 }
 
 .btn-text:hover {
-  color: #fff;
-}
-
-.btn:disabled {
-  color: grey;
-  border-color: var(--color-primary);
-}
-
-.btn-text:disabled {
   color: #fff;
 }
 
