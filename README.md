@@ -26,7 +26,9 @@ Youtube
 👤 Author1
 
 GitHub: TechnoAndy 
+
 Twitter: @Adiegaardt 
+
 LinkedIn: http://www.linkedin.com/in/andrea-diegaardt-110203116
 
 # 🤝 Contributing 
