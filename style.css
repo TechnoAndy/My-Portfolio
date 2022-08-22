@@ -284,7 +284,7 @@
 }
 
 .btn-text:enabled {
-  color: #fff
+  color: #fff;
 }
 
 .btn:hover {
@@ -294,14 +294,6 @@
 
 .btn-text:hover {
   color: #fff;
-}
-
-.btn:pressed {
-  background-color: #6070ff;
-}
-
-.btn-text:pressed {
-  background-color: #6070ff;
 }
 
 .btn:disabled {
