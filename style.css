@@ -159,10 +159,11 @@
 }
 
 .work-card-img {
-  object-fit: cover;
+  object-fit: ;
   align-items: center;
   justify-content: center;
   margin-top: 12px;
+  width: 327px;
 }
 
 .align-center-text { /* Tonic */
