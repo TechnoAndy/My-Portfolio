@@ -180,14 +180,16 @@
 }
 
 .about-section-2 {
-  padding: 5px 30px;
-  width: 310px;
-  width: 300px;
-  margin: 0;
-  margin-left: 13px;
+  display: flex;
   align-content: center;
-}
-
+  justify-content: center;
+  padding: 5px 30px;
+  width: 300px;
+  margin-left: 13px;
+  margin-top: 5px;
+  margin-left: 0;
+} 
+  
 .badges {
   align-items: flex-start;
   justify-content: start;
@@ -281,14 +283,6 @@
 
 .btn-text:hover {
   color: #fff;
-}
-
-/* .about-section-2 */
-
-.about-section-2 .content-text {
-  margin-top: -30px;
-  margin-top: -110px;
-  margin-left: -20px;
 }
 
 .lang-icon {
