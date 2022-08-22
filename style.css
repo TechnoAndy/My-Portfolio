@@ -167,12 +167,12 @@
 
 .align-center-text { /* Tonic */
   padding: 30px 25px;
-  margin-top: -40px;
+  margin-top: -50px;
 }
 
 .align-center-text-1 { /* Multi-Post Stories */
   padding: 30px 25px;
-  margin-top: px;
+  margin-top: -20px;
 }
 
 .align-center-text-2 {/* About Myself */
@@ -193,23 +193,25 @@
   align-items: flex-start;
   justify-content: start;
   margin-left: -39px;
+  padding-top: 7px;
+  padding-bottom: 8px;
 }
 
 .works-badge {
   text-align: start;
   padding: 0.4rem 1.2rem;
   background: #ebebff;
-  border-radius: 0.8rem;
+  border-radius: 8px;
   list-style: none;
   display: inline;
   color: var(--color-primary);
-  font-size: 12px;
+  font-size: 15px;
   font-family: "poppins", sans-serif !important;
 }
 
 .work-card p {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 15px;
   color: #344563;
   flex: none;
