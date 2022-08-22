@@ -159,7 +159,7 @@
 }
 
 .work-card-img {
-  object-fit: ;
+  object-fit: cover;
   align-items: center;
   justify-content: center;
   margin-top: 12px;
@@ -278,12 +278,38 @@
   background-color: transparent;
 }
 
+.btn:enabled {
+  color: #fff;
+  color: #396df2;
+}
+
+.btn-text:enabled {
+  color: #fff
+}
+
 .btn:hover {
   background-color: #396df2;
   color: #fff;
 }
 
 .btn-text:hover {
+  color: #fff;
+}
+
+.btn:pressed {
+  background-color: #6070ff;
+}
+
+.btn-text:pressed {
+  background-color: #6070ff;
+}
+
+.btn:disabled {
+  color: grey;
+  border-color: var(--color-primary);
+}
+
+.btn-text:disabled {
   color: #fff;
 }
 
