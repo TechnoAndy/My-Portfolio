@@ -138,7 +138,6 @@
   display: grid;
   grid-template-rows: auto auto auto auto;
   gap: 50px;
-  
 }
 
 .works-1 > div {
