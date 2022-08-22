@@ -14,16 +14,18 @@ Visual Studio
 ## Authors
 
 👤 **Author1**
-=======
-
-- GitHub: [@githubhandle](https://github.com/TechoAndy)
-- Twitter: [@twitterhandle](http://www.linkedin.com/in/andrea-diegaardt-110203116)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/http://www.linkedin.com/in/andrea-diegaardt-110203116)
 
 
 ## 🤝 Contributing
 
+
 Contributions, issues, and feature requests are welcome!
+GitHub: TechnoAndy 
+
+Twitter: @Adiegaardt 
+
+LinkedIn: http://www.linkedin.com/in/andrea-diegaardt-110203116
+
 
 Feel free to check the [issues page](../../issues/).
 
