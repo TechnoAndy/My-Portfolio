@@ -346,16 +346,10 @@
 }
 
 .contact-me-container {
-  background-image: url(contactformbackground.png);
-  background-repeat: no-repeat;
+  background-image: url(headershapesmobile.png);
   background-color: #6070FF;
-  
-  
-  padding-right: 50px;
-  padding-bottom: 50px;
-
-  
-  
+  width: 375px;
+  height: 779px;
 }
 
 .contact-me-container button {
@@ -398,11 +392,11 @@
   }
 
 .contact-me-container h3 {
-  height: 20px;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 33px;
   color: #FFFFFF;
+  
 }
 
 .contact-me-container p {
@@ -414,6 +408,10 @@
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
   /* width: auto;
@@ -434,6 +432,14 @@
   background-color: transparent; */
 
 .contact-me-text {
-  padding: 30px 25px;
-  margin-top: -20px;
+  padding: 20px 50px;
+  margin-top: 20px;
 }  
+
+.contact-me-container .name {
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
