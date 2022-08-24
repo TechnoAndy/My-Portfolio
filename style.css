@@ -423,6 +423,7 @@
     font-size: 15px;
     line-height: 24px;
     color: #B3BAC5;
+    text-indent: 10px;
     
   }
   
@@ -443,6 +444,7 @@
     bottom: 15px;
     margin-left: 13px;
     margin-top: 5px;
+    text-indent: 10px;
   }
   
   .contact-me-container .text {
@@ -462,6 +464,7 @@
     bottom: 15px;
     margin-left: 13px;
     margin-top: 5px;
+    text-indent: 10px;
   }
   
 
