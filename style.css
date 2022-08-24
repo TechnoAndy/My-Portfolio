@@ -370,7 +370,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
-    margin: 10px 20px;
+    margin: 5px 20px;
   }
     
   .contact-me-container .button .button-1:hover {
@@ -385,9 +385,13 @@
   h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 40px;
     color: #FFFFFF;
-    margin-top: 50px;
+    /* margin-top: 60px; */
+    padding-top: 100px;
+    position: flex;
+    text-align: center;
+    padding-bottom: 5px;
   }
   
   p {
@@ -395,20 +399,25 @@
     height: 150px;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
-    font-weight: 200;
-    font-size: 20px;
+    font-weight: 400;
+    font-size: 18px;
     line-height: 20px;
     color: #FFFFFF;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    /* padding-bottom: -2px; */
+    position: flex;
+    text-align: center;
+    padding-left: 35px;
+    padding-top: 5px;
+    margin-bottom: -19px;
+    
   }
   
-  .contact-me-text {
+  /* .contact-me-text {
     padding: 3px 35px;
     margin-top: 0px;
     position: flex;
     text-align: center;
-  }  
+  } */  
   
   .contact-me-container .name {
     border: 1px solid #CFD8DC;
@@ -416,7 +425,6 @@
     width: 325px;
     height: 48px;
     margin-left: 13px;
-    margin-top: 5px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
@@ -424,8 +432,8 @@
     line-height: 24px;
     color: #B3BAC5;
     text-indent: 10px;
-    margin: 10px 20px;
-    
+    margin: -10px 40px 5px 20px;
+
   }
   
   .contact-me-container .email {
@@ -435,7 +443,7 @@
     height: 48px;
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 400;
+    font-weight: lighter;
     font-size: 15px;
     line-height: 24px;
     color: #B3BAC5;
@@ -446,7 +454,7 @@
     margin-left: 13px;
     margin-top: 5px;
     text-indent: 10px;
-    margin: 10px 20px;
+    margin: 10px 40px 10px 20px;
   }
   
   .contact-me-container .text {
@@ -467,7 +475,7 @@
     margin-left: 13px;
     margin-top: 0px;
     text-indent: 10px;
-    margin: 10px 20px;
+    margin: 5px 20px;
   }
   
 
