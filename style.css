@@ -388,10 +388,10 @@
     font-size: 40px;
     color: #FFFFFF;
     /* margin-top: 60px; */
-    padding-top: 100px;
+    padding-top: 80px;
     position: flex;
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: -5px;
   }
   
   p {
@@ -407,7 +407,7 @@
     position: flex;
     text-align: center;
     padding-left: 35px;
-    padding-top: 5px;
+    padding-top: -45px;
     margin-bottom: -19px;
     
   }
@@ -432,7 +432,8 @@
     line-height: 24px;
     color: #B3BAC5;
     text-indent: 10px;
-    margin: -10px 40px 5px 20px;
+    /* margin: -10px 40px 5px 20px; */
+    margin: 10px 20px;
 
   }
   
@@ -454,7 +455,7 @@
     margin-left: 13px;
     margin-top: 5px;
     text-indent: 10px;
-    margin: 10px 40px 10px 20px;
+    margin: 10px 20px;
   }
   
   .contact-me-container .text {
@@ -475,7 +476,7 @@
     margin-left: 13px;
     margin-top: 0px;
     text-indent: 10px;
-    margin: 5px 20px;
+    margin: 10px 20px;
   }
   
 
