@@ -169,12 +169,13 @@
   }
   
   .align-center-text { /* Tonic */
-    padding: 30px 25px;
-    margin-top: -50px;
+    padding: 30px 5px;
+    margin-top: -150px;
+    
   }
   
   .align-center-text-1 { /* Multi-Post Stories */
-    padding: 30px 25px;
+    padding: 30px 0px;
     margin-top: -20px;
   }
   
@@ -215,7 +216,7 @@
   .work-card p {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     color: #344563;
     flex: none;
     order: 0;
@@ -226,8 +227,11 @@
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
     color: #172b4d;
+    padding: 8px 1px;
+    
+    
   }
   
   .dev-date {
@@ -243,14 +247,18 @@
   
   .works-content-p {
     color: var(--color-text);
+    text-align: left;
+    
   }
+  
   
   .work-heading {
     height: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 40px;
     color: #091e42;
+    padding-right: 200px;
   }
   
   .work-heading-2 {
@@ -260,7 +268,7 @@
     color: #091e42;
     padding: 0;
     width: 190px;
-    margin: 0;
+    margin-right: 50px;
   }
   
   .btn {
