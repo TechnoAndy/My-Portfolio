@@ -382,25 +382,25 @@
     color: #fff;
   }
   
-  .contact-me-container h3 {
+  h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 33px;
     color: #FFFFFF;
-    
+    margin-top: 50px;
   }
   
-  .contact-me-container p {
+  p {
     width: 300px;
     height: 150px;
     font-family: "Poppins", sans-serif !important;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
-    padding-top: 20px;
-    
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
   
   .contact-me-text {
