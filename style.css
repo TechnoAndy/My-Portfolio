@@ -345,8 +345,6 @@
     color: #dfe1e6;
   }
   
-  
-  
   .contact-me-container {
     background-image: url(background-contact.png);
     background-position: top right;
@@ -354,7 +352,7 @@
     background-color: #6070FF;
     width: 375px;
     height: 779px;
-    border-top-left-radius:8px;
+    border-top-left-radius: 50px;
   }
   
   .contact-me-container .button .button-1 {
@@ -372,6 +370,7 @@
     font-weight: 500;
     font-size: 17px;
     line-height: 24px;
+    margin: 10px 20px;
   }
     
   .contact-me-container .button .button-1:hover {
@@ -405,9 +404,10 @@
   }
   
   .contact-me-text {
-    padding: 20px 30px;
-    margin-top: 20px;
-   text-align: center;
+    padding: 3px 35px;
+    margin-top: 0px;
+    position: flex;
+    text-align: center;
   }  
   
   .contact-me-container .name {
@@ -424,6 +424,7 @@
     line-height: 24px;
     color: #B3BAC5;
     text-indent: 10px;
+    margin: 10px 20px;
     
   }
   
@@ -445,6 +446,7 @@
     margin-left: 13px;
     margin-top: 5px;
     text-indent: 10px;
+    margin: 10px 20px;
   }
   
   .contact-me-container .text {
@@ -463,8 +465,9 @@
     top: 15px;
     bottom: 15px;
     margin-left: 13px;
-    margin-top: 5px;
+    margin-top: 0px;
     text-indent: 10px;
+    margin: 10px 20px;
   }
   
 
