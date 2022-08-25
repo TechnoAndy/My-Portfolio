@@ -360,13 +360,14 @@
   font-family: "Poppins", sans-serif !important;
   font-weight: 700;
   font-size: 40px;
-  color: #ffffff;
+  color: #fff;
   margin-top: 60px;
   padding-top: 80px;
   position: flex;
   text-align: center;
   padding-bottom: -5px;
 }
+
 .contact-me-container p {
   width: 300px;
   height: 150px;
@@ -386,7 +387,6 @@
 
 .contact-me-text {
   padding: 3px 35px;
-  margin-top: 0px;
   position: flex;
   text-align: center;
 }
@@ -413,7 +413,7 @@
   border-radius: 8px;
   width: 325px;
   height: 48px;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: lighter;
   font-size: 15px;
