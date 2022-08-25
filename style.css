@@ -405,7 +405,6 @@
   color: #b3bac5;
   text-indent: 10px;
   margin-left: 20px;
-  /* margin: 10px; */
 }
 
 .contact-me-container .email {
@@ -426,7 +425,6 @@
   margin-top: 5px;
   text-indent: 10px;
   margin-left: 20px;
-  /* margin: 10px; */
 }
 
 .contact-me-container .text {
@@ -446,7 +444,6 @@
   bottom: 15px;
   text-indent: 10px;
   margin-left: 20px;
-  /* margin: 10px; */
 }
 
 .contact-me-container .button .button-1 {
@@ -464,7 +461,6 @@
   font-size: 17px;
   line-height: 24px;
   margin-left: 20px;
-  /* margin-right: 10px; */
 }
 
 .contact-me-container .button .button-1:hover {
