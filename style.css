@@ -172,7 +172,6 @@
     padding: 100px 20px;
     margin-top: -130px;
     padding-bottom: 30px;
-    
   }
   
   .align-center-text-1 { /* Multi-Post Stories */
@@ -249,11 +248,11 @@
   }
   
   .work-heading {
-    height: 20px;
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
+    height: 20px;
   }
   
   .work-heading-2 {
@@ -262,7 +261,7 @@
     font-size: 33px;
     color: #091e42;
     width: 190px;
-    margin-bottom: 5px;
+    height: 70px;
   }
   
   .btn {
@@ -355,33 +354,6 @@
     width: 375px;
     height: 779px;
     border-top-left-radius: 50px;
-  }
-
-  .contact-me-container .button .button-1 {
-    width: 300px;
-    margin-left: 13px;
-    margin-top: 5px;
-    color: #6070FF;
-    background-color: #FFFFFF;
-    border: none;
-    border-radius: 8px;
-    width: 140px;
-    height: 48px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    margin: 5px 20px;
-  }
-
-  .contact-me-container .button .button-1:hover {
-    background-color: #6070ff;
-    color: #fff;
-  }
-
-  .button-text:hover {
-    color: #fff;
   }
 
   .contact-me-container h3 {
@@ -477,4 +449,31 @@
     margin-top: 0px;
     text-indent: 10px;
     margin: 10px 20px;
+  }
+
+  .contact-me-container .button .button-1 {
+    width: 300px;
+    margin-left: 13px;
+    margin-top: 5px;
+    color: #6070FF;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    width: 140px;
+    height: 48px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 5px 20px;
+  }
+
+  .contact-me-container .button .button-1:hover {
+    background-color: #6070ff;
+    color: #fff;
+  }
+
+  .button-text:hover {
+    color: #fff;
   }
