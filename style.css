@@ -7,6 +7,18 @@
   --color-text-dark: #172b4d;
 }
 
+/* body {
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw;
+  font-size: 14px;
+  min-width: 100vw;
+  box-sizing: border-box;
+  overflow-x: hidden;
+} */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -36,55 +48,64 @@
 .content-section {
   background-image: url(background01.png);
   background-repeat: no-repeat;
-  background-size: 410px;
-  background-position-x: 5px;
+  width: 1440px;
+  height: 916;
+  background-position: center;
+  background-size: auto;
+
 }
 
 .content {
-  padding: 80px 20px;
+  padding: 80px 150px;
+}
+
+.about-detail-left {
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: flex-start; */
+}
+
+.lang-123 {
+  /* display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; */
 }
 
 .header-text {
-  width: 320px;
-  height: 90px;
+  width: 920px;
+  height: 122px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
-  display: flex;
   align-items: center;
   color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .content-text {
-  position: static;
-  width: 327px;
-  height: 150px;
+  width: 920px;
+  height: 122px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  display: flex;
+  font-size: 48px;
+  line-height: 60px;
   align-items: center;
+  justify-content: center;
+  flex-direction: col;
+  letter-spacing: .37px;
   color: #172b4d;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 
 .content-text-p {
   position: static;
-  width: 300px;
-  height: 150px;
+  width: 920px;
+  height: 98px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 28px;
   color: #344563;
   flex: none;
   order: 1;
@@ -97,10 +118,10 @@
   text-align: left;
   position: static;
   width: 117px;
-  height: 2px;
+  height: 24px;
   font-family: "poppins", sans-serif !important;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
@@ -134,6 +155,27 @@
   background-color: transparent;
 }
 
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.nav-item {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #344563;
+}
+
 .works {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -151,7 +193,8 @@
   padding-top: 10px;
   margin-top: 20px;
   margin-bottom: 42px;
-  width: 360px;
+  width: 1156px;
+  height: 496px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -159,19 +202,35 @@
 }
 
 .work-card-img {
-  object-fit: cover;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-top: 12px;
-  width: 327px;
-  height: 220px;
+  justify-content: flex-start;
+  width: 100%;
+  height: 448px;
   border-radius: 8px;
+  margin: 0.9rem 0 0.9rem 0;
+  gap: 0.4rem;
+  
+  
+}
+
+.work-card-img-1 {
+  width: 100%;
+  height: 448px;
+  border-radius: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; 
 }
 
 .align-center-text {
-  padding: 100px 20px;
+  padding: 30px 20px;
   margin-top: -130px;
-  padding-bottom: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; 
+  float: right;
 }
 
 .align-center-text-1 {
@@ -188,14 +247,15 @@
   align-content: center;
   justify-content: center;
   padding: 5px 30px;
-  width: 300px;
+  width: 1440px;
+  height: 924px;
   margin-left: 13px;
   margin-top: 5px;
 }
 
 .badges {
   align-items: flex-start;
-  justify-content: start;
+  justify-content: flex-start;
   margin-left: -39px;
   padding-top: 7px;
   padding-bottom: 8px;
@@ -351,37 +411,44 @@
   background-position: top right;
   background-repeat: no-repeat;
   background-color: #6070ff;
-  width: 375px;
-  height: 779px;
+  width: 1440px;
+  height: 846px;
   border-top-left-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
 
 .contact-me-container h3 {
+  width: 801px;
+  height: 56px;
   font-family: "Poppins", sans-serif !important;
   font-weight: 700;
   font-size: 40px;
   color: #fff;
   margin-top: 60px;
   padding-top: 80px;
-  position: flex;
-  text-align: center;
-  padding-bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-me-container p {
-  width: 300px;
-  height: 150px;
+  width: 569px;
+  height: 102px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   color: #fff;
   position: flex;
   text-align: center;
   padding-left: 35px;
-  padding-top: -10px;
-  padding-bottom: 30px;
+  padding-top: -5px;
+  padding-bottom: 60px;
   margin-bottom: -19px;
 }
 
@@ -404,6 +471,7 @@
   color: #b3bac5;
   text-indent: 10px;
   margin-left: 20px;
+  display: flex;
 }
 
 .contact-me-container .email {
@@ -424,6 +492,9 @@
   margin-top: 20px;
   text-indent: 10px;
   margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-me-container .text {
@@ -445,6 +516,9 @@
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-me-container .button .button-1 {
@@ -453,14 +527,17 @@
   background-color: #fff;
   border: none;
   border-radius: 8px;
-  width: 140px;
+  width: 142px;
   height: 48px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 24px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 110px;
+  margin-top: 25px;
 }
 
 .contact-me-container .button .button-1:hover {
