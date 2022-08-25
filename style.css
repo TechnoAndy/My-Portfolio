@@ -359,7 +359,7 @@
   border-top-left-radius: 50px;
 }
 .contact-me-container h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
   font-weight: 700;
   font-size: 40px;
   color: #FFFFFF;
@@ -399,7 +399,7 @@
   width: 325px;
   height: 48px;
   margin-left: 13px;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -436,33 +436,31 @@
   border-radius: 8px;
   width: 325px;
   height: 170px;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  color: #B3BAC5;
+  color: #b3bac5;
   left: 16px;
   right: px;
   top: 15px;
   bottom: 15px;
   margin-left: 13px;
-  margin-top: 0px;
   text-indent: 10px;
   margin: 10px 20px;
 }
 
 .contact-me-container .button .button-1 {
-  width: 300px;
   margin-left: 13px;
   margin-top: 5px;
-  color: #6070FF;
-  background-color: #FFFFFF;
+  color: #6070ff;
+  background-color: #fff;
   border: none;
   border-radius: 8px;
   width: 140px;
   height: 48px;
-  font-family: 'Poppins';
+  font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -471,7 +469,7 @@
 }
 
 .contact-me-container .button .button-1:hover {
-  background-color: #6070FF;
+  background-color: #6070ff;
   color: #fff;
 }
 
