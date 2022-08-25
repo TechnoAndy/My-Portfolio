@@ -396,7 +396,6 @@
   border-radius: 8px;
   width: 325px;
   height: 48px;
-  margin-left: 13px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -447,7 +446,6 @@
 }
 
 .contact-me-container .button .button-1 {
-  margin-left: 13px;
   margin-top: 5px;
   color: #6070ff;
   background-color: #fff;
