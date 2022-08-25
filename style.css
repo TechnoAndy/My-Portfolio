@@ -385,3 +385,90 @@
   padding-top: -45px;
   margin-bottom: -19px;
 }
+
+.contact-me-text {
+  padding: 3px 35px;
+  margin-top: 0px;
+  position: flex;
+  text-align: center;
+}
+.contact-me-container .name {
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 325px;
+  height: 48px;
+  margin-left: 13px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
+  text-indent: 10px;
+  margin: -10px 40px 5px 20px;
+  margin: 10px 20px;
+}
+.contact-me-container .email {
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 325px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
+  left: 16px;
+  right: 38px;
+  top: 15px;
+  bottom: 15px;
+  margin-left: 13px;
+  margin-top: 5px;
+  text-indent: 10px;
+  margin: 10px 20px;
+}
+.contact-me-container .text {
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 325px;
+  height: 170px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #B3BAC5;
+  left: 16px;
+  right: px;
+  top: 15px;
+  bottom: 15px;
+  margin-left: 13px;
+  margin-top: 0px;
+  text-indent: 10px;
+  margin: 10px 20px;
+}
+.contact-me-container .button .button-1 {
+  width: 300px;
+  margin-left: 13px;
+  margin-top: 5px;
+  color: #6070FF;
+  background-color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  width: 140px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 5px 20px;
+}
+.contact-me-container .button .button-1:hover {
+  background-color: #6070FF;
+  color: #fff;
+}
+.button-text:hover {
+  color: #fff;
+}
