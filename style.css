@@ -365,7 +365,7 @@
   padding-top: 80px;
   position: flex;
   text-align: center;
-  padding-bottom: -5px;
+  padding-bottom: -40px;
 }
 
 .contact-me-container p {
@@ -373,16 +373,17 @@
   height: 150px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 18px;
   line-height: 20px;
   color: #fff;
-  padding-bottom: -2px;
   position: flex;
   text-align: center;
   padding-left: 35px;
-  padding-top: -45px;
+  padding-top: -40px;
+  padding-bottom: 20px;
   margin-bottom: -19px;
+  line-height: 25px;
 }
 
 .contact-me-text {
@@ -421,7 +422,7 @@
   right: 38px;
   top: 15px;
   bottom: 15px;
-  margin-top: 5px;
+  margin-top: 20px;
   text-indent: 10px;
   margin-left: 20px;
 }
@@ -434,7 +435,7 @@
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
   color: #b3bac5;
   left: 16px;
@@ -443,6 +444,8 @@
   bottom: 15px;
   text-indent: 10px;
   margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .contact-me-container .button .button-1 {
