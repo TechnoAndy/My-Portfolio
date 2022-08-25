@@ -5,7 +5,7 @@
   --color-primary-light: #7f8cff;
   --color-text: #344563;
   --color-text-dark: #172b4d;
-} 
+  } 
 
   .navbar {
     display: flex;
@@ -254,7 +254,6 @@
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
-    /* padding-right: 200px; */
   }
   
   .work-heading-2 {
@@ -283,7 +282,6 @@
     border-radius: 8px;
     border-color: var(--color-primary);
     background-color: transparent;
-    
   }
   
   .btn:hover {
@@ -349,7 +347,7 @@
     color: #dfe1e6;
   }
   
-  /* .contact-me-container {
+  .contact-me-container {
     background-image: url(background-contact.png);
     background-position: top right;
     background-repeat: no-repeat;
@@ -358,7 +356,7 @@
     height: 779px;
     border-top-left-radius: 50px;
   }
-  
+
   .contact-me-container .button .button-1 {
     width: 300px;
     margin-left: 13px;
@@ -376,17 +374,17 @@
     line-height: 24px;
     margin: 5px 20px;
   }
-    
+
   .contact-me-container .button .button-1:hover {
     background-color: #6070ff;
     color: #fff;
   }
-  
+
   .button-text:hover {
     color: #fff;
   }
-  
-  h3 {
+
+  .contact-me-container h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -397,8 +395,8 @@
     text-align: center;
     padding-bottom: -5px;
   }
-  
-  p {
+
+  .contact-me-container p {
     width: 300px;
     height: 150px;
     font-family: "Poppins", sans-serif !important;
@@ -413,16 +411,15 @@
     padding-left: 35px;
     padding-top: -45px;
     margin-bottom: -19px;
-    
   }
-  
+
   .contact-me-text {
     padding: 3px 35px;
     margin-top: 0px;
     position: flex;
     text-align: center;
   }
-  
+
   .contact-me-container .name {
     border: 1px solid #CFD8DC;
     border-radius: 8px;
@@ -439,7 +436,7 @@
     margin: -10px 40px 5px 20px;
     margin: 10px 20px;
   }
-  
+
   .contact-me-container .email {
     border: 1px solid #CFD8DC;
     border-radius: 8px;
@@ -480,9 +477,4 @@
     margin-top: 0px;
     text-indent: 10px;
     margin: 10px 20px;
-  } */
-  
-
-
-
-
+  }
