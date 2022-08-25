@@ -375,15 +375,14 @@
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 25px;
   color: #fff;
   position: flex;
   text-align: center;
   padding-left: 35px;
-  padding-top: -40px;
-  padding-bottom: 20px;
+  padding-top: -10px;
+  padding-bottom: 30px;
   margin-bottom: -19px;
-  line-height: 25px;
 }
 
 .contact-me-text {
