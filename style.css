@@ -577,7 +577,7 @@ body {
   .container {
     display: flex;
     flex-direction: row;
-    position: relative;
+    
   }
 
   .works-1 > div {
@@ -595,9 +595,10 @@ body {
   }
 
   .work-card-img {
+    
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
     height: 448px;
@@ -626,7 +627,7 @@ body {
   .align-center-text {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 24px;
   }
 
