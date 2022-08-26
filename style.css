@@ -48,15 +48,15 @@ body {
 .content-section {
   background-image: url(background01.png);
   background-repeat: no-repeat;
-  width: 1440px;
-  height: 916;
+  width: 100%;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
 
 }
 
 .content {
-  padding: 80px 150px;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .about-detail-left {
@@ -83,8 +83,6 @@ body {
 }
 
 .content-text {
-  width: 920px;
-  height: 122px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 700;
@@ -99,8 +97,6 @@ body {
 
 .content-text-p {
   position: static;
-  width: 920px;
-  height: 98px;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 400;
@@ -117,8 +113,6 @@ body {
 .social-connect {
   text-align: left;
   position: static;
-  width: 117px;
-  height: 24px;
   font-family: "poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
