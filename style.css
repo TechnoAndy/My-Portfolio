@@ -50,7 +50,6 @@ nav {
   border: none;
 }
 
-
 .content {
   margin: 0 auto;
   width: 80%;
@@ -277,7 +276,7 @@ img {
 }
 
 .line {
-  border-bottom: 1px solid #DFE1E6;
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .lang-icon-3 {
@@ -416,12 +415,13 @@ form {
     line-height: 20px;
     color: #344563;
   }
+
   .content {
     width: 50%;
-  } 
+  }
 
   .content-section {
-    background-image: url(images/bigbackfirstpage.png)
+    background-image: url(images/bigbackfirstpage.png);
   }
 
   .contact-form {
@@ -442,7 +442,7 @@ form {
     justify-content: space-around;
     padding: 0;
   }
- 
+
   .img-last {
     order: 2;
   }
@@ -485,4 +485,3 @@ form {
     align-items: flex-start;
   }
 }
-    
