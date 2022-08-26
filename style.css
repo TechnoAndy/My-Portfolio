@@ -18,7 +18,6 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   background-color: #6b778c;
-  margin: 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -128,7 +127,6 @@ body {
     cursor: pointer;
     margin-right: 2rem;
     margin-top: 0.8rem;
-    position: relative;
     text-decoration: none;
     list-style: absolute;
     position: absolute;
@@ -320,6 +318,7 @@ body {
     flex-direction: column;
     gap: 24px;
   }
+  
   .languages {
     display: flex;
     justify-content: space-between;
@@ -553,7 +552,7 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-family: "Poppins";
+    font-family: "poppins", sans-serif !important;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
@@ -574,6 +573,7 @@ body {
     display: grid;
     gap: 50px;
   }
+  
   .container {
     display: flex;
     flex-direction: row;
@@ -741,6 +741,7 @@ body {
     flex-direction: column;
     gap: 24px;
   }
+
   .languages {
     display: flex;
     justify-content: space-between;
