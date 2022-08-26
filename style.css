@@ -21,6 +21,7 @@ body {
   margin: 0;
 } 
 
+@media screen and (max-width: 768px) {
 .navbar {
   display: flex;
   align-items: center;
@@ -122,26 +123,25 @@ body {
 }
 
 .hamburger {
+  width: 2rem;
+  height: 15px;
+  cursor: pointer;
+  margin-right: 2rem;
+  margin-top: 0.8rem;
+  position: relative;
   text-decoration: none;
   list-style: absolute;
   position: absolute;
-  left: 68%;
+  left: 90%;
   font-size: larger;
   font-weight: bold;
   border: none;
   color: #6070ff;
   background-color: transparent;
-}
+} 
 
 .nav-list {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
+  display: none;
 }
 
 .nav-item {
@@ -438,11 +438,11 @@ body {
   color: #172B4D;
 }
 
-
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
   font-size: 17px;
+}
 }
