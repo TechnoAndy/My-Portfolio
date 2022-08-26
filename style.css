@@ -318,7 +318,7 @@ body {
     flex-direction: column;
     gap: 24px;
   }
-  
+
   .languages {
     display: flex;
     justify-content: space-between;
@@ -573,7 +573,7 @@ body {
     display: grid;
     gap: 50px;
   }
-  
+
   .container {
     display: flex;
     flex-direction: row;
