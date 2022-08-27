@@ -561,6 +561,7 @@ form {
   .text:hover {
     transform: translate(42px, 18px);
   }
+  
   .nav-logo {
     cursor: pointer;
     animation: movedown 1s linear 1;
@@ -568,7 +569,6 @@ form {
     visibility: visible;
     animation-fill-mode: forwards;
   }
-  
   @keyframes movedown {
     0% {
       transform: translateX(-100px);
