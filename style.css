@@ -5,7 +5,7 @@ body {
   left: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
 }
 
 h3 {
@@ -92,7 +92,6 @@ nav {
   font-size: 48px;
   line-height: 60px;
   color: #172b4d;
-  
 }
 
 .content-text-p {
@@ -174,7 +173,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-
 }
 
 .align-center-text-2 {
@@ -209,6 +207,11 @@ img {
   color: var(--color-primary);
   font-size: 15px;
   font-family: "poppins", sans-serif !important;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
 
 .work-card p {
@@ -254,11 +257,6 @@ li {
 .works-content-p {
   color: var(--color-text);
   text-align: left;
-}
-
-p {
-  padding: 0;
-  margin: 0;
 }
 
 .work-heading {
