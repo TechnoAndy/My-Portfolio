@@ -561,23 +561,4 @@ form {
   .text:hover {
     transform: translate(42px, 18px);
   }
-  
-  .nav-logo {
-    cursor: pointer;
-    animation: movedown 1s linear 1;
-    animation-delay: 1s;
-    visibility: visible;
-    animation-fill-mode: forwards;
-  }
-  @keyframes movedown {
-    0% {
-      transform: translateX(-100px);
-      visibility: visible;
-    }
-
-    100% {
-      transform: translateX(0);
-      visibility: visible;
-    }
-  }
 }
