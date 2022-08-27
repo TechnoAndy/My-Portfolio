@@ -5,7 +5,27 @@ body {
   left: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  background-color: #6b778c;
+  background-color: #DFE1E6;
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
@@ -51,6 +71,9 @@ nav {
 .content {
   margin: 0 auto;
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .header-text {
@@ -69,7 +92,7 @@ nav {
   font-size: 48px;
   line-height: 60px;
   color: #172b4d;
-  margin: 0;
+  
 }
 
 .content-text-p {
@@ -84,15 +107,12 @@ nav {
 
 .social-connect {
   text-align: left;
-  position: static;
   font-family: "poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
-  margin-top: 25px;
-  margin-bottom: 29px;
   text-decoration: none;
   list-style: none;
 }
@@ -138,7 +158,8 @@ img {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 24px;
+  gap: 24px;
 }
 
 .about-section-2 {
@@ -153,23 +174,29 @@ img {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 16px;
+
 }
 
 .align-center-text-2 {
   width: 80%;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 24px;
   margin: 0 auto;
 }
 
+.about-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .badges {
+  display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-left: -39px;
-  padding-top: 7px;
-  padding-bottom: 8px;
+  color: #6070ff;
+  gap: 16px;
 }
 
 .works-badge {
@@ -198,19 +225,31 @@ img {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
+  font-size: 18px;
   color: #172b4d;
+  list-style: none;
 }
 
 .dev-date {
   color: #6b778c;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
+  display: flex;
+  padding: 0;
 }
 
 .bullet {
   padding-left: 15px;
-  color: #c1c7d0;
+  color: #6B778C;
   font-size: 20px;
+  list-style: none;
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+li {
+  list-style: none;
 }
 
 .works-content-p {
@@ -218,12 +257,16 @@ img {
   text-align: left;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .work-heading {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: #091e42;
-  height: 20px;
 }
 
 .work-heading-2 {
@@ -231,8 +274,6 @@ img {
   font-weight: 700;
   font-size: 33px;
   color: #091e42;
-  width: 190px;
-  height: 70px;
 }
 
 .btn {
@@ -241,6 +282,7 @@ img {
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
   font-weight: 500;
+  font-size: 17px;
   color: #6070ff;
   padding: 12px;
   border: 1px solid #6070ff;
@@ -252,7 +294,7 @@ img {
 
 .btn:hover {
   background-color: #6070ff;
-  color: #fff;
+  color: white;
 }
 
 .lang-icon {
@@ -274,7 +316,9 @@ img {
 }
 
 .line {
+  padding: 10px;
   border-bottom: 1px solid #dfe1e6;
+  
 }
 
 .lang-icon-3 {
@@ -284,7 +328,7 @@ img {
   font-family: "Poppins", sans-serif !important;
   font-size: 20px;
   font-weight: 500;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 .lang-icon-ul {
@@ -333,10 +377,10 @@ img {
 .contact-me-container {
   width: 80%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
+  gap: 24px;
 }
 
 .contact-me-container h2 {
@@ -395,6 +439,8 @@ form {
   font-size: 17px;
 }
 
+
+
 @media screen and (min-width: 768px) {
   nav img {
     display: none;
@@ -427,18 +473,20 @@ form {
   }
 
   .img {
-    width: 40%;
+    width: 48%;
   }
 
   .align-center-text {
-    width: 35%;
+    width: 48%;
+    padding: 24px;
   }
 
   .work-card {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2%;
   }
 
   .img-last {
@@ -458,23 +506,35 @@ form {
   }
 
   .about-detail-left {
-    width: 35%;
+    width: 30%;
   }
 
   .lang-icon {
-    width: 45%;
-    margin: auto 0;
+    width: 60%;
+    gap: 40px;
+
   }
 
   .align-center-text-2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
   }
 
   .png {
     display: flex;
     flex-direction: row;
+  }
+
+  .png-1 {
+    width: 15px;
+    height: 10px;
+  }
+
+  .png-2 {
+    width: 10px;
+    height: 15px;
   }
 
   .png li {
