@@ -537,7 +537,7 @@ form {
   }
 
   .btn:hover {
-    background-color: red;
+    background-color: orange;
     color: black;
     border: 2px solid black;
   }
