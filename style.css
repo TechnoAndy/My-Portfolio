@@ -239,8 +239,7 @@ img {
 
 .bullet {
   padding-left: 15px;
-  color: #6B778C;
-  font-size: 20px;
+  color: #6b778c;
   list-style: none;
   font-family: "Poppins", sans-serif !important;
   font-style: normal;
@@ -318,7 +317,6 @@ p {
 .line {
   padding: 10px;
   border-bottom: 1px solid #dfe1e6;
-  
 }
 
 .lang-icon-3 {
@@ -439,8 +437,6 @@ form {
   font-size: 17px;
 }
 
-
-
 @media screen and (min-width: 768px) {
   nav img {
     display: none;
@@ -512,7 +508,6 @@ form {
   .lang-icon {
     width: 60%;
     gap: 40px;
-
   }
 
   .align-center-text-2 {
