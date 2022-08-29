@@ -11,24 +11,16 @@ CSS
 Visual Studio
 
 ## Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+Please get your browser update.
+To get a local copy up and running follow these simple steps.
 
-# Live Project Demo
+Run the command below from the Terminal:
 
-Checkout this link for a live demo of the portfolio. [Link](https://technoandy.github.io/My-Portfolio/)
+git clone <URL> '(https://github.com/TechnoAndy/My-Portfolio.git)' in your terminal
 
-# Github
+## Live Project Demo
 
-Gitub repository can be found [Here](https://github.com/TechnoAndy/My-Portfolio)
-
-To get a local copy up and running follow these simple example steps.
-
-## Prerequisites
-## Setup
-## Install
-## Usage
-## Run tests
-## Deployment
+[Live Demo Link](https://technoandy.github.io/My-Portfolio/)
 
 ## Authors
 
