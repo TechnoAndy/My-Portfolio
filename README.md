@@ -1,4 +1,5 @@
 
+
 # My Portfolio
 
 This is our second project in the Full Stack program where we must utilize the skills we have learned in the previous lessons and design the sekelton of our portfolio website that will be used when we start to seek employment. This website will have all our projects that we have worked on.
@@ -11,16 +12,16 @@ CSS
 Visual Studio
 
 ## Getting Started
-This is an example of how you may give instructions on setting up your project locally. Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.
+Please get your browser update.
+To get a local copy up and running follow these simple steps.
 
-To get a local copy up and running follow these simple example steps.
+Run the command below from the Terminal:
 
-## Prerequisites
-## Setup
-## Install
-## Usage
-## Run tests
-## Deployment
+git clone <URL> '(https://github.com/TechnoAndy/My-Portfolio.git)' in your terminal
+
+## Live Project Demo
+
+[Live Demo Link](https://technoandy.github.io/My-Portfolio/)
 
 ## Authors
 
