@@ -69,6 +69,7 @@ nav {
   background-color: #6070ff;
   margin: 5px;
   -webkit-transition: all 0.3s ease-in-out;
+  transition: all;
 }
 
 .content-section {
