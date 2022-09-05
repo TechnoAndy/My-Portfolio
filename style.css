@@ -41,7 +41,6 @@ html {
   margin-bottom: 0;
   border: none;
   position: fixed;
-
 }
 
 nav {
@@ -176,7 +175,7 @@ img {
   left: -100%;
   background: #6070ff;
   mix-blend-mode: multiply;
-  color: white;
+  color: #fff;
   top: 0px;
   gap: 10px;
   padding-top: 90px;
@@ -191,9 +190,9 @@ img {
   left: 0;
 }
 
-.nav-item {
+.nav-item-1 {
   text-decoration: none;
-  color: white;
+  color: #fff;
   list-style: none;
   margin-right: 2rem;
   font-family: 'Poppins', sans-serif !important;
@@ -506,7 +505,7 @@ form {
 
   .navbar {
     display: flex;
-    background-color: #ffff;
+    background-color: #fff;
     color: #6070ff;
     width: 100%;
     min-height: 48px;
