@@ -35,6 +35,8 @@ ul {
   min-height: 48px;
   margin-bottom: 0;
   border: none;
+  position: fixed;
+
 }
 
 nav {
@@ -56,6 +58,19 @@ nav {
   text-decoration: none;
 }
 
+.bar {
+  display: block;
+  cursor: pointer;
+}
+
+.bar-1 {
+  width: 25px;
+  height: 3px;
+  background-color: #6070ff;
+  margin: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
 .content-section {
   background-image: url(images/mobilebackground.png);
   background-repeat: no-repeat;
@@ -66,6 +81,17 @@ nav {
   margin-bottom: 70px;
   border-bottom-left-radius: 80px;
   border: none;
+}
+
+.bar.active .bar-1:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.active .bar-1:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.bar.active .bar-1:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .content {
@@ -131,17 +157,34 @@ img {
 }
 
 .nav-list {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  left: -100%;
+  background: #6070ff;
+  mix-blend-mode: multiply;
+  color: white;
+  top: 0px;
+  gap: 10px;
+  padding-top: 40px;
+}
+
+.nav-list-desktop {
   display: none;
 }
 
-.nav-item {
-  list-style: none;
-  margin-right: 2rem;
+.nav-list.active {
+  left: 0;
 }
 
-.nav-item a {
+.nav-item {
   text-decoration: none;
-  color: #344563;
+  color: white;
+  list-style: none;
+  margin-right: 2rem;
 }
 
 .works {
@@ -440,18 +483,44 @@ form {
     display: none;
   }
 
-  .nav-list {
+  .nav-list-desktop {
     display: flex;
-    justify-content: space-between;
   }
 
-  .nav-list li {
+  .navbar {
+    display: flex;
+    background-color: #ffff;
+    color: #6070ff;
+    width: 100%;
+    min-height: 48px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .menu-bar {
+
+  }
+
+  .nav-logo {
+    /* display: none; */
+  }
+
+/*   .nav-list {
+    display: flex;
+    justify-content: space-between;
+  } */
+
+  .nav-item {
     font-family: 'Poppins', sans-serif !important;
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .bar {
+    display: none;
   }
 
   .content {
