@@ -34,7 +34,7 @@ html {
 }
 
 .navbar {
-  background-color: #ffff;
+  background-color: transparent;
   color: #6070ff;
   width: 100%;
   min-height: 48px;
@@ -60,7 +60,6 @@ nav {
   font-size: 15px;
   color: #6070ff;
   text-decoration: none;
-  padding-bottom: 40px;
 }
 
 .bar {
@@ -178,19 +177,15 @@ img {
   color: #fff;
   top: 0px;
   gap: 10px;
-  padding-top: 90px;
+  padding-top: 70px;
   
-}
-
-.nav-list-desktop {
-  display: none;
 }
 
 .nav-list.active {
   left: 0;
 }
 
-.nav-item-1 {
+.nav-item {
   text-decoration: none;
   color: #fff;
   list-style: none;
