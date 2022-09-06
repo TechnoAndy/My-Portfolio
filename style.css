@@ -189,13 +189,16 @@ img {
   text-decoration: none;
   color: #fff;
   list-style: none;
-  margin-right: 2rem;
   font-family: "Poppins", sans-serif !important;
   font-weight: 500;
   font-size: 32px;
   line-height: 50px;
   text-align: left;
   padding-left: 20px;
+}
+
+.menu-bar {
+  display: none;
 }
 
 .works {
@@ -517,6 +520,14 @@ form {
     color: #344563;
   }
 
+  .menu-bar {
+    display: flex;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
   .bar {
     display: none;
   }
@@ -604,9 +615,9 @@ form {
   }
 
   .btn:hover {
-    background-color: orange;
-    color: black;
-    border: 2px solid black;
+    background-color: #6070ff;
+    color: #fff;
+    border: 2px solid #fff;
   }
 
   h3:hover {
