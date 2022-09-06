@@ -9,26 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrapper">
-    <header class="navbar">
+      <header class="navbar">
       <nav>
-        <a href="#" class="nav-logo">My Logo</a>
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#">Contact</a>
-            </li>
-          </ul>
-          <img src="images/hamburger.png" alt="hamburger">      
-        </nav>
-    </header>
+        <a href="#home" class="nav-logo">My Logo</a>
+        <div class="menu-bar">
+          
+          <a class="nav-item" href="#reference">Portfolio</a>
+          <a class="nav-item" href="#details">About</a>
+          <a class="nav-item" href="#reach-out">Contact</a>
+        
+      </div>
+        <div class="nav-list">
+            
+          <a class="nav-item" href="#reference">Portfolio</a>
+          <a class="nav-item" href="#details">About</a>
+          <a class="nav-item" href="#reach-out">Contact</a>
+            
+        </div>
+          <div class="bar">
+            <div class="bar-1"></div>
+            <div class="bar-1"></div>
+            <div class="bar-1"></div>
+            </div>
+          </nav>
+      </header>
     <main>
-        <section class="content-section">
+        <section id="home" class="content-section">
             <div class="content">
                 <h1 class="content-text">I'm Andrea<br>Glad to see you!</h1>
                 <p class="content-text-p">I'm a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don't hestiate to contact me.</p>
@@ -42,7 +48,7 @@
                 </ul>
               </div>
             </section>
-            <section class="works">
+            <section id="reference" class="works">
               <div class="container">
                 <div class="work-card">
                   <img class="img" src="images/SnapshootPortfolio02.png" alt="" />
@@ -62,7 +68,7 @@
                     <li class="works-badge">css</li>
                     <li class="works-badge">javaScript</li>
                   </ul>
-                  <button class="btn" onclick="window.location.href = 'https://github.com/TechnoAndy/My-Portfolio';">See Project</button>
+                  <button class="btn" type="button">See Project</button>
                   
                 </div>
               </div>
@@ -85,7 +91,7 @@
                 <li class="works-badge">css</li>
                 <li class="works-badge">javaScript</li>
               </ul>
-              <button class="btn" onclick="window.location.href = 'https://github.com/TechnoAndy/My-Portfolio';">See Project</button>
+              <button class="btn" type="button">See Project</button>
             </div>
           </div>
           <div class="work-card">
@@ -105,7 +111,7 @@
               <li class="works-badge">css</li>
               <li class="works-badge">javaScript</li>
             </ul>
-            <button class="btn" onclick="window.location.href = 'https://github.com/TechnoAndy/My-Portfolio';">See Project</button>
+            <button class="btn" type="button">See Project</button>
           </div>
         </div>
         <div class="work-card">
@@ -125,16 +131,16 @@
             <li class="works-badge">css</li>
             <li class="works-badge">javaScript</li>
           </ul>
-          <button class="btn" onclick="window.location.href = 'https://github.com/TechnoAndy/My-Portfolio';">See Project</button>
+          <button class="btn" type="button">See Project</button>
         </div>
       </div>
             </section>
-              <section class="about-section-2">
+              <section id="details" class="about-section-2">
                 <div class="align-center-text-2">
                   <div class="about-detail-left">
                     <h2 class="header-text">About<br>Myself</h2>
                   <p class="content-text-p">
-                    Hello I'm a software developer! i can help you build a product, feature or
+                    Hello I'm a software developer! I can help you build a product, feature or
                     website look through some of my work and experience! if you like
                     what you see and have a project you need coded, don't hesistate to
                     contact me.
@@ -171,15 +177,13 @@
                         <li class="lang-icon-3 line" > 
                         Frameworks <img class="png-2" src="images/arrow.png" alt="" /> 
                         </li>
-                
                         <li class="lang-icon-3 line" >
                         Skills <img class="png-2" src="images/arrow.png" alt="" />
-                        
+                      </li>
                       </ul>
-                   
                 </div>
               </section>
-              <section class="contact-form">
+              <section id="reach-out" class="contact-form">
                 <div class="contact-me-container">
                   <h2>Contact me</h2>
                   <p>
@@ -199,8 +203,7 @@
                 </div>
               </section>
             </main>
-          </div>
-            <script src="index.js"></script>
+            <script src="script.js"></script>
           </body>
         </html>
  
