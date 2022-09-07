@@ -314,6 +314,9 @@ li {
 .works-content-p {
   color: var(--color-text);
   text-align: left;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .work-heading {
@@ -490,6 +493,18 @@ form {
   flex-direction: column;
   gap: 24px;
   font-size: 17px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 16px;
 }
 
 @media screen and (min-width: 768px) {
