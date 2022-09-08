@@ -11,6 +11,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navList.classList.remove('active');
 }));
 
+// Validate contact form
 function validate() {
   const text = document.getElementById('text1').value;
   const regx = /^([a-z0-9]+)@([a-z0-9-]+).([a-z]{2,20})(.[a-z]{2,8})?$/;
@@ -18,11 +19,11 @@ function validate() {
   if (regx.test(text)) {
     document.getElementById('ibitext').innerHTML = 'valid';
     document.getElementById('ibitext').style.visibility = 'visible';
-    document.getElementById('ibitext').style.color = 'green';
+    document.getElementById('ibitext').style.color = 'blue';
   } else {
     document.getElementById('ibitext').innerHTML = 'invalid (lowercase only)';
     document.getElementById('ibitext').style.visibility = 'visible';
-    document.getElementById('ibitext').style.color = 'red';
+    document.getElementById('ibitext').style.color = 'orange';
   }
 }
 validate();
