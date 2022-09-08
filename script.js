@@ -12,7 +12,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 }));
 
 // Preserve data in the browser
-function fillInputs() {
+/* function fillInputs() {
   // seting on load
   const username = document.getElementById('text1n');
   const valueForName = localStorage.getItem('username');
@@ -42,4 +42,19 @@ function fillInputs() {
     localStorage.setItem('text', event.target.value);
   });
 }
-fillInputs();
+fillInputs(); */
+
+function test() {
+
+  var uid = document.getElementById("text1n").value;
+  var pw = document.getElementById("text3t").value;
+  var email = document.getElementById("text2").value;
+
+  var user = localStorage.setItem("uid", uid); 
+  var pass = localStorage.setItem("pw", pw);
+  var em = localStorage.setItem("email", email);
+
+  var user = localStorage.getItem("uid", uid);
+  var pass = localStorage.getItem("pw", pw);
+  var em = localStorage.getItem("email", email);
+}
