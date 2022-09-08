@@ -49,10 +49,7 @@ open.addEventListener('click', () => {
    
     <button class="btn" type="button">See live&nbsp<img src="images/seeliveicon.png"/button >
     <button class="btn" type="button">See source&nbsp<img src="images/seesourceVector.png"/button >
-    <button class="close" type="button">Close</button >
-
-  
-`;
+    <button class="close" type="button">x</button >`;
 
 	main.appendChild(popup);
 	body.appendChild(main);
@@ -61,7 +58,6 @@ open.addEventListener('click', () => {
 	close.addEventListerner('click', () => {
 		body.removeChild(main);
 		});
-
 });
 
 
