@@ -13,7 +13,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 
 // Preserve data in the browser
 function fillInputs() {
-  //seting on load
+  // seting on load
   const username = document.getElementById('text1n');
   const valueForName = localStorage.getItem('username');
   if (valueForName) {
