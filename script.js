@@ -11,9 +11,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navList.classList.remove('active');
 }));
 
-
 // Preserve data in the browser
-
 function fillInputs() {
   //seting on load
   const username = document.getElementById('text1n');
@@ -26,8 +24,8 @@ function fillInputs() {
     localStorage.setItem('username', event.target.value);
   });
 
-  const email = document.getElementById("text2");
-  const ValueFormEmail = localStorage.getItem("email");
+  const email = document.getElementById('text2');
+  const ValueFormEmail = localStorage.getItem('email');
   if (ValueFormEmail) {
     email.value = ValueFormEmail;
   }
