@@ -14,6 +14,8 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 
 // Popup window functionality
 
+
+
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
@@ -44,9 +46,11 @@ open.addEventListener('click', () => {
     <li class="works-badge">javaScript</li>
    </ul>
    
+   
     <button class="btn" type="button">See live&nbsp<img src="images/seeliveicon.png"/button >
     <button class="btn" type="button">See source&nbsp<img src="images/seesourceVector.png"/button >
     <button class="close" type="button">Close</button >
+
   
 `;
 
