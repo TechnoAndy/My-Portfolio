@@ -19,7 +19,7 @@ function fillInputs() {
   if (valueForName) {
     username.value = valueForName;
   }
-  username.addEventListener('change', function (event) {
+  username.addEventListener('change', (event) => {
     username.value = event.target.value;
     localStorage.setItem('username', event.target.value);
   });
@@ -28,7 +28,7 @@ function fillInputs() {
   if (ValueFormEmail) {
     email.value = ValueFormEmail;
   }
-  email.addEventListener('change', function (event) {
+  email.addEventListener('change', (event) => {
     email.value = event.target.value;
     localStorage.setItem('email', event.target.value);
   });
@@ -37,11 +37,9 @@ function fillInputs() {
   if (valueForText) {
     text.value = valueForText;
   }
-  text.addEventListener('change', function (event) {
+  text.addEventListener('change', (event) => {
     text.value = event.target.value;
     localStorage.setItem('text', event.target.value);
   });
 }
-addEventListener('load', () => {
-  fillInputs();
-});
+fillInputs();
