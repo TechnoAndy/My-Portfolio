@@ -508,7 +508,7 @@ form {
   color: #0011a8;
   border: 1px solid #0011a8;
   border-radius: 8px;
-  padding: 16px 32px;
+  padding: 8px 16px;
   font-size: 15px;
   text-align: center;
 }
@@ -566,7 +566,7 @@ form {
   bottom: 0;
   right: 0;
   left: 0;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .card-portfolio-1 span {
