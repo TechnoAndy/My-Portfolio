@@ -11,23 +11,7 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navList.classList.remove('active');
 }));
 
-// Validate contact form
-/* function validate() {
-  const text = document.getElementById('text1').value;
-  const regx = /^([a-z0-9]+)@([a-z0-9-]+).([a-z]{2,20})(.[a-z]{2,8})?$/;
-
-  if (regx.test(text)) {
-    document.getElementById('ibitext').innerHTML = 'Email is valid';
-    document.getElementById('ibitext').style.visibility = 'visible';
-    document.getElementById('ibitext').style.color = 'blue';
-  } else {
-    document.getElementById('ibitext').innerHTML = 'Email requires lowercase only';
-    document.getElementById('ibitext').style.visibility = 'visible';
-    document.getElementById('ibitext').style.color = 'maroon';
-  }
-}
-validate(); */
-
+// Email validation
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
   msg.style.visibility = 'visible';
@@ -85,4 +69,35 @@ form.addEventListener('submit', (event) => {
     form.elements.email.value = '';
     form.elements.message.value = '';
   }
+});
+
+// preserve data with localStorage
+const formDataFromLocalStorage = localStorage.getItem('formData') ? JSON.parse(localStorage.getItem('formData')) : null;
+const formData = {
+  name: formDataFromLocalStorage ? formDataFromLocalStorage.name : '',
+  email: formDataFromLocalStorage ? formDataFromLocalStorage.email : '',
+  text: formDataFromLocalStorage ? formDataFromLocalStorage.text : '',
+};
+
+const setFormData = () => {
+  form.elements.name.value = formData.name;
+  form.elements.email.value = formData.email;
+  form.elements.text.value = formData.text;
+};
+
+setFormData();
+
+form.elements.name.addEventListener('change', () => {
+  formData.name = form.elements.name.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.elements.email.addEventListener('change', () => {
+  formData.email = form.elements.email.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+
+form.elements.text.addEventListener('change', () => {
+  formData.text = form.elements.text.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 });
