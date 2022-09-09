@@ -473,6 +473,7 @@ li {
 }
 
 .text {
+  font-family: "Poppins", sans-serif;
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -495,41 +496,204 @@ form {
   font-size: 17px;
 }
 
-.popup {
-  transition: 10s;
-  background-color: red;
-  border: 1 px solid #DFE1E6;
-  border-radius: 16px;
-  color: purple;
-  
+.space-date {
+  margin-bottom: 15px;
 }
 
-.main {
-  width: 100vw;
-  height: 50vh;
-  position: fixed;
-  top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 16px;
-  height: 100vh;
-  border-radius: 16px;
-  padding: 50px;
-
-}
-
-.close {
-  position: absolute;
-  bottom: 78.5%;
-  left: 47%;
-  font-size: 20px;
-  font-weight: 700px;
+.modal-3 {
+  list-style: none;
+  width: 100%;
+  font-family: "Poppins", sans-serif !important;
   background-color: #fff;
-  border: none;
+  color: #0011a8;
+  border: 1px solid #0011a8;
+  border-radius: 8px;
+  padding: 16px 32px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.modal-2 {
+  list-style: none;
+  background-color: #e5e5e5;
+  color: #6070ff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 15px;
+}
+
+.modal-1 {
+  color: #6070ff;
+  display: flex;
+  gap: 4px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.column-left-1 p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 12px 0;
+}
+
+.pop-close {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #6b778c;
+}
+
+.card-portfolio-1 {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  width: 343px;
+  height: 630px;
+  padding: 24px;
+  margin: 24px auto;
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.card-portfolio-1 span {
+  float: right;
+  padding-top: 24px;
+  padding-left: 24px;
 }
 
 @media screen and (min-width: 768px) {
+  .work-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2%;
+  }
+
+  .works:nth-child(odd) .work-card {
+    flex-direction: row-reverse;
+  }
+
+  .pop-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #6b778c;
+  }
+
+  .forD-1 {
+    align-items: center;
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .forM-1 {
+    display: none;
+  }
+
+  .column-left-1 {
+    float: left;
+    width: 65%;
+    padding: 10px;
+  }
+
+  .column-left-1 p {
+    position: static;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-family: "Poppins", sans-serif !important;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #344563;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0;
+  }
+
+  .column-right-1 {
+    float: right;
+    width: 30%;
+    padding: 10px;
+    height: 300px;
+  }
+
+  .modal-1 {
+    color: #6070ff;
+    display: flex;
+    gap: 4px;
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .modal-2 {
+    list-style: none;
+    background-color: #e5e5e5;
+    color: #6070ff;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    height: 24px;
+    width: 93px;
+    left: 135px;
+    top: 0;
+    border-radius: 8px;
+    padding: 4px 12px 4px 12px;
+  }
+
+  .modal-3 {
+    list-style: none;
+    background-color: #fff;
+    font-family: "Poppins", sans-serif !important;
+    color: #0011a8;
+    border: 1px solid #0011a8;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .card-portfolio-1 {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 70%;
+    padding: 24px;
+    margin: 24px auto;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+
+  .card-portfolio-1 span {
+    float: right;
+    padding-top: 24px;
+    padding-left: 24px;
+  }
+
+
+
   nav img {
     display: none;
   }
@@ -588,14 +752,6 @@ form {
   .align-center-text {
     width: 48%;
     padding: 24px;
-  }
-
-  .work-card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 2%;
   }
 
   .img-last {
@@ -675,5 +831,15 @@ form {
 
   .text:hover {
     transform: translate(42px, 18px);
+  }
+}
+
+@media (max-width: 767px) {
+  .forM-1 {
+    width: 292px;
+  }
+
+  .forD-1 {
+    display: none;
   }
 }
