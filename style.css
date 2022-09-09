@@ -497,24 +497,33 @@ form {
 
 .popup {
   transition: 10s;
+  background-color: red;
+  border: 1 px solid #DFE1E6;
+  border-radius: 16px;
+  color: purple;
+  
 }
+
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
   position: fixed;
-  top: 0;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   border-radius: 16px;
+  height: 100vh;
+  border-radius: 16px;
+  padding: 50px;
+
 }
 
 .close {
   position: absolute;
-  bottom: 80%;
-  left: 80%;
-  font-size: 30px;
+  bottom: 78.5%;
+  left: 47%;
+  font-size: 20px;
   font-weight: 700px;
   background-color: #fff;
   border: none;
