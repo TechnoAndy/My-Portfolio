@@ -17,13 +17,13 @@ function validate() {
   const regx = /^([a-z0-9]+)@([a-z0-9-]+).([a-z]{2,20})(.[a-z]{2,8})?$/;
 
   if (regx.test(text)) {
-    document.getElementById('ibitext').innerHTML = 'valid';
+    document.getElementById('ibitext').innerHTML = 'Email is valid';
     document.getElementById('ibitext').style.visibility = 'visible';
     document.getElementById('ibitext').style.color = 'blue';
   } else {
-    document.getElementById('ibitext').innerHTML = 'invalid (lowercase only)';
+    document.getElementById('ibitext').innerHTML = 'Email requires lowercase only';
     document.getElementById('ibitext').style.visibility = 'visible';
-    document.getElementById('ibitext').style.color = 'orange';
+    document.getElementById('ibitext').style.color = 'maroon';
   }
 }
 validate();
