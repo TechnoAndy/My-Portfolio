@@ -692,12 +692,6 @@ form {
     padding-left: 24px;
   }
 
-
-
-  nav img {
-    display: none;
-  }
-
   .nav-list-desktop {
     display: flex;
   }
