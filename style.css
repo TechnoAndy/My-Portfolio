@@ -330,7 +330,8 @@ li {
   color: #091e42;
 }
 
-.btn, .btn-form {
+.btn,
+.btn-form {
   width: fit-content;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -346,7 +347,8 @@ li {
   margin-bottom: 30px;
 }
 
-.btn, .btn-form:hover {
+.btn,
+.btn-form:hover {
   background-color: #6070ff;
   color: white;
 }
