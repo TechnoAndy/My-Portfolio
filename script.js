@@ -14,8 +14,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
 
 // Popup window functionality
 
-
-
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
@@ -49,16 +47,17 @@ open.addEventListener('click', () => {
    
     <button class="btn" type="button">See live&nbsp<img src="images/seeliveicon.png"/button >
     <button class="btn" type="button">See source&nbsp<img src="images/seesourceVector.png"/button >
-    <button class="close" type="button">x</button >`;
+    <button class="close" onclick="windowClose" type="button">x</button >`;
 
 	main.appendChild(popup);
 	body.appendChild(main);
-
-	window.close = document.querySelector('.close');
-	close.addEventListerner('click', () => {
-		body.removeChild(main);
-		});
 });
 
-
+	
+  function windowClose (e) {
+    if (e.target.className === '.popup') {
+      open.style.display = 'none';
+    }
+  }
+  open.addEventListener('click', windowClose);
 
