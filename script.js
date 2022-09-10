@@ -13,7 +13,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   navList.classList.remove('active');
 }));
 
-
 // Email validation
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
@@ -285,4 +284,3 @@ popClose.addEventListener('click', () => {
   body.style.filter = 'none';
   enableScroll();
 });
-
