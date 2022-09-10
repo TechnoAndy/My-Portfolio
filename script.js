@@ -12,7 +12,6 @@ document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click'
   hamburger.classList.remove('active');
   navList.classList.remove('active');
 }));
-
 function disableScroll() {
   worksBody.style.filter = 'blur(7px)';
   const xPos = window.scrollX;
