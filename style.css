@@ -514,7 +514,6 @@ form {
   font-size: 17px;
 }
 
-
 .error-msg {
   font-family: "Inter", sans-serif;
   color: white;
@@ -522,8 +521,7 @@ form {
   visibility: hidden;
   transition: visibility 0.2s ease-in-out;
   background-color: red;
-  width: 265px;
-=======
+
 .space-date {
   margin-bottom: 15px;
 }
