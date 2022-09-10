@@ -251,5 +251,5 @@ popClose.addEventListener('click', () => {
   boxModal.style.display = 'none';
   body.style.filter = 'none';
   enableScroll();
-
+  
 });
