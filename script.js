@@ -140,6 +140,7 @@ const modalCardDisplay = modalCard
               <div class="images">
          <img class="forD-1" src="${modeCard.imageD}" alt="Pop Up Desktop" >
       <img class="forM-1" src="${modeCard.imageM}" alt="Pop Up Mobile" >
+
          </div>
       <div>
       <div class="row">
@@ -195,6 +196,7 @@ popClose.addEventListener('click', () => {
 });
 
 // Email validation
+
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
   msg.style.visibility = 'visible';
