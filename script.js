@@ -198,8 +198,7 @@ const modalCardDisplay = modalCard
          <img class="forD-1" src="${modeCard.imageD}" alt="Pop Up Desktop" >
       <img class="forM-1" src="${modeCard.imageM}" alt="Pop Up Mobile" >
 
-         </div>    
-      
+         </div>
       <div>
       <div class="row">
       <div class="column-left-1">
