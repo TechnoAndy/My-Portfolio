@@ -522,8 +522,9 @@ form {
   transition: visibility 0.2s ease-in-out;
   background-color: red;
   width: 265px;
+}
 
-  .space-date {
+.space-date {
     margin-bottom: 15px;
   }
 
@@ -864,4 +865,4 @@ form {
       display: none;
     }
   }
-}
+
