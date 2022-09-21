@@ -195,7 +195,6 @@ popClose.addEventListener('click', () => {
   enableScroll();
 });
 
-
 // Email validation
 
 function showMessage(input, message, type) {
@@ -287,4 +286,3 @@ form.elements.text.addEventListener('change', () => {
   formData.text = form.elements.text.value;
   localStorage.setItem('formData', JSON.stringify(formData));
 });
-
