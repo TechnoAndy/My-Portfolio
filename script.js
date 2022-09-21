@@ -1,3 +1,5 @@
+/* eslint-disable linebreak-style */
+
 const hamburger = document.querySelector('.bar');
 const navList = document.querySelector('.nav-list');
 const body = document.querySelector('.content-section');
@@ -138,9 +140,7 @@ const modalCardDisplay = modalCard
               <div class="images">
          <img class="forD-1" src="${modeCard.imageD}" alt="Pop Up Desktop" >
       <img class="forM-1" src="${modeCard.imageM}" alt="Pop Up Mobile" >
-
-         </div>    
-      
+         </div>
       <div>
       <div class="row">
       <div class="column-left-1">
@@ -284,5 +284,3 @@ form.elements.text.addEventListener('change', () => {
   formData.text = form.elements.text.value;
   localStorage.setItem('formData', JSON.stringify(formData));
 });
-
-
