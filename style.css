@@ -333,7 +333,8 @@ li {
   color: #091e42;
 }
 
-.btn {
+.btn,
+.btn-form {
   width: fit-content;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -349,7 +350,8 @@ li {
   margin-bottom: 30px;
 }
 
-.btn:hover {
+.btn,
+.btn-form:hover {
   background-color: #6070ff;
   color: white;
 }
@@ -458,7 +460,7 @@ li {
   padding: 0;
 }
 
-.name {
+/* .name {
   padding: 15px;
   border: none;
   border-radius: 8px;
@@ -470,7 +472,7 @@ li {
   font-weight: 400;
   font-size: 17px;
   color: #172b4d;
-}
+} */
 
 .text {
   font-family: "Poppins", sans-serif;
@@ -488,12 +490,37 @@ li {
   color: #172b4d;
 }
 
+input {
+  display: flex;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  color: #172b4d;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #172b4d;
+}
+
 form {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 24px;
   font-size: 17px;
+}
+
+.error-msg {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  visibility: hidden;
+  transition: visibility 0.2s ease-in-out;
+  background-color: red;
 }
 
 .space-date {
@@ -760,7 +787,7 @@ form {
     width: 70%;
   }
 
-  form .btn {
+  form .btn-form {
     margin: 0 auto;
   }
 

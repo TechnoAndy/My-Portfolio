@@ -114,15 +114,16 @@
                   <p>
                     If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
                   </p>
-                  <form action="https://formspree.io/f/mnqrnjwl"
+                  <form id="contact-from-validation" action="https://formspree.io/f/mnqrnjwl"
                   method="POST">
                   
-                  <input type="text" name="name" class="name" placeholder="Full Name" maxlength="30" required>
+                  <input type="text" id="name" name="name" class="name" placeholder="Full Name" maxlength="30" required>
                   
-                  <input type="email" name="email" class="name" placeholder="Email address" required>
+                  <input type="email" id="email" name="email" class="name" id="text1" placeholder="Email address" required>
                   
-                  <textarea name="text" class="text" placeholder="Write your message here"  maxlength="500" required></textarea>
-                    <button class="btn" type="submit">Get in Touch</button>
+                  <textarea name="text" id="text" class="text" placeholder="Write your message here"  maxlength="500" required></textarea>
+                  <small class="error-msg"></small>
+                    <button class="btn-form" type="submit">Get in Touch</button>
                 
                   </form>
                 </div>
