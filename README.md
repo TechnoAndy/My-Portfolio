@@ -3,7 +3,7 @@
 
 # My Portfolio
 
-This is our second project in the Full Stack program where we must utilize the skills we have learned in the previous lessons and design the sekelton of our portfolio website that will be used when we start to seek employment. This website will have all our projects that we have worked on.
+A portfolio website to showcase the projects that have been done that will be used in the real world when looking for employment opportunites.
 
 
 ## Built With
