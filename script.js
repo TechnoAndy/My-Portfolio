@@ -32,12 +32,12 @@ function enableScroll() {
 const cards = [
   {
     id: 1,
-    title: 'Tonic',
-    imageM: './images/SnapshootPortfolio02.png',
-    imageD: './images/SnapshootPortfolio02.png',
+    title: 'Meals DB',
+    imageM: './images/Recipe-App.png',
+    imageD: './images/Recipe-App.png',
     heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
     languages: ['html', 'css', 'javascript'],
   },
   {
@@ -109,18 +109,18 @@ workCard.innerHTML += worksCard;
 const modalCard = [
   {
     id: 1,
-    title: 'Tonic',
-    imageM: './images/SnapshootPortfolio01.png',
-    imageD: './images/SnapshootPortfolio02.png',
+    title: 'Meals DB',
+    imageM: './images/Recipe-App.png',
+    imageD: './images/Recipe-App.png',
     heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescriptionD:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is    simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea, languages: html, css, javascript",
+      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
     cardDescriptionM:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It ",
+      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
     languagesD: ['github', 'ruby', 'Bootstrap'],
     languagesM: ['html', 'css', 'javascript'],
-    linkLive: 'https://github.com/TechnoAndy/My-Portfolio',
-    linkSource: 'https://TechnoAndy.github.io/Portfolio/',
+    linkLive: 'https://imaginative-bunny-380575.netlify.app/',
+    linkSource: 'https://github.com/TechnoAndy/Meals-DB',
   },
 ];
 
