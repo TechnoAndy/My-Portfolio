@@ -282,7 +282,3 @@ form.elements.email.addEventListener('change', () => {
   localStorage.setItem('formData', JSON.stringify(formData));
 });
 
-form.elements.text.addEventListener('change', () => {
-  formData.text = form.elements.text.value;
-  localStorage.setItem('formData', JSON.stringify(formData));
-});
