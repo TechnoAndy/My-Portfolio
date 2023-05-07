@@ -33,28 +33,28 @@ const cards = [
   {
     id: 1,
     title: 'Meals DB',
-    imageM: './images/Recipe-App.png',
-    imageD: './images/Recipe-App.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    imageM: './images/Meals-DB.png',
+    imageD: '.images/Meals-DB.png',
+    heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescription:
       'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
     languages: ['html', 'css', 'javascript'],
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    imageM: './images/image2desktop.png',
-    imageD: '.images/image2desktop.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Math Magicians',
+    imageM: './images/Math-magicians.png',
+    imageD: '.images/Math-magicians.png',
+    heading2: ['Calculator', 'Front End Dev', '2022'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
     languages: ['html', 'css', 'javascript'],
   },
   {
     id: 3,
-    title: 'Facebook 360',
-    imageM: './images/image3desktop.png',
-    imageD: '.images/image3desktop.png',
+    title: 'Seminar',
+    imageM: './images/Seminar.png', 
+    imageD: '.images/Seminar.png',
     heading2: ['Canopy', 'Back End Dev', '2015'],
     cardDescription:
       'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -112,7 +112,7 @@ const modalCard = [
     title: 'Meals DB',
     imageM: './images/Recipe-App.png',
     imageD: './images/Recipe-App.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescriptionD:
       "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
     cardDescriptionM:
@@ -121,6 +121,21 @@ const modalCard = [
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://imaginative-bunny-380575.netlify.app/',
     linkSource: 'https://github.com/TechnoAndy/Meals-DB',
+  },
+  {
+    id: 2,
+    title: 'Math Magicians',
+    imageM: './images/Math-magicians.png',
+    imageD: './images/Math-magicians.png',
+    heading2: ['Calculator', 'Front End Dev', '2022'],
+    cardDescriptionD:
+      "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
+    cardDescriptionM:
+      "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
+    languagesD: ['github', 'ruby', 'Bootstrap'],
+    languagesM: ['html', 'css', 'javascript'],
+    linkLive: 'https://math-magicians-648245.netlify.app',
+    linkSource: 'https://github.com/TechnoAndy/math-magicians',
   },
 ];
 
