@@ -301,20 +301,3 @@ form.elements.text.addEventListener('change', () => {
   formData.text = form.elements.text.value;
   localStorage.setItem('formData', JSON.stringify(formData));
 });
-
-function twoDiff(arrA, arrB) {
-  let newArr = [];
-  for(let i=0; i<arrA.length; i++) {
-    if(arrB.indexOf(arrA[i]) === -1) {
-      newArr.push(arrA[i]);
-    }
-  }
-  for (let i=0; i<arrB.length; i++) {
-    if(arrA.indexOf(arrB[i]) === -1) {
-      newArr.push(arrB[i]);
-    }
-  }
-  return newArr;
-}
-
-console.log(twoDiff([1, 2, 3], [1, 2, 4]));
