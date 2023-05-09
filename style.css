@@ -335,7 +335,6 @@ li {
 }
 
 .btn,
-.btn-Resume,
 .btn-form {
   width: fit-content;
   text-align: center;
@@ -351,6 +350,28 @@ li {
   background-color: white;
   margin-bottom: 30px;
   text-decoration: none;
+}
+
+.btn-Resume {
+  width: fit-content;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6070ff;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
+.btn-Resume {
+  background-color: #6070ff;
+  color: white;
 }
 
 .btn,
