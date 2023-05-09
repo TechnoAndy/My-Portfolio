@@ -422,6 +422,42 @@ li {
   padding: 15px;
 }
 
+.framework-button {
+  display: flex;
+  border: none;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: start;
+}
+
+.framework-dropdown {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 0.4rem;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+  overflow: hidden;
+}
+
+.framework-dropdown.open-framework-dropdown {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.framework-dropdown-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  display: flex;
+  width: 100%;
+}
+
 .framework-dropdown-li {
   text-align: center;
   border-radius: 6px;
@@ -430,7 +466,7 @@ li {
   color: black;
   background-color: #f7f7f9;
   border: 1px solid #6070ff;
-  font-size: 17px;
+  font-size: 18px;
   padding: 8px 0;
   transition: transform 0.5 ease-in-out;
 }
@@ -441,7 +477,7 @@ li {
   transform: scale(1.1);
 }
 
-/* .skills-button {
+.skills-button {
   display: flex;
   border: none;
   background-color: white;
@@ -449,7 +485,7 @@ li {
   font-weight: 500;
   font-size: 20px;
   text-align: start;
-} */
+}
 
 .skills-dropdown {
   width: 0;
@@ -484,7 +520,7 @@ li {
   background-color: #f7f7f9;
   border: 1px solid #6070ff;
   border-radius: 6px;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px 4px;
   transition: transform 0.5 ease-in-out;
 }
@@ -493,6 +529,10 @@ li {
   background-color: #6070ff;
   color: white;
   transform: scale(1.1);
+}
+
+.lang-seperators img {
+  width: 640px;
 }
 
 
@@ -898,11 +938,11 @@ form {
     height: 15px;
   }
 
-  .png li {
+/*   .png li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-  }
+  } */
 
   .btn:hover {
     background-color: #6070ff;

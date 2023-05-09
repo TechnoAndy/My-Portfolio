@@ -241,6 +241,16 @@ popClose.addEventListener('click', () => {
   enableScroll();
 });
 
+// languages close toggle
+
+const langArrowClick = document.querySelector('#arrow-up');
+const langMenu = document.querySelector('#lang-menu');
+
+langArrowClick.addEventListener('click', () => {
+  langArrowClick.classList.toggle('anti-rotate');
+  langMenu.classList.toggle('close-lang-menu');
+});
+
 // framework dropdown toggle
 
 const framework = document.querySelector('#framework');
