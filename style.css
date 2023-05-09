@@ -131,6 +131,7 @@ nav {
 
 .content-text-p {
   position: static;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
