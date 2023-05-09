@@ -38,7 +38,7 @@ const cards = [
     heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescription:
       'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['javascript', 'ES6', 'webpack'],
   },
   {
     id: 2,
@@ -48,27 +48,27 @@ const cards = [
     heading2: ['Calculator', 'Front End Dev', '2022'],
     cardDescription:
       'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['html', 'css', 'react'],
   },
   {
     id: 3,
     title: 'Seminar',
-    imageM: './images/Seminar.png', 
+    imageM: './images/Seminar.png',
     imageD: '.images/Seminar.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    heading2: ['Seminar', 'Front End Dev', '2022'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available ',
     languages: ['html', 'css', 'javascript'],
   },
   {
     id: 4,
-    title: 'Uber Navigation',
+    title: 'Rails Recipe App',
     imageM: './images/image4desktop.png',
     imageD: '.images/image4desktop.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    heading2: ['Recipe', 'Back End Dev', '2023'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
+    languages: ['ruby', 'postgreSQL', 'RSpec'],
   },
 ];
 
@@ -84,9 +84,9 @@ const worksCard = cards.map(
 <div class="align-center-text">
   <h3 class="work-heading ${index}">${card.title}</h3>
   <ul class="dev-date">
-    <li class="canopy">CANOPY</li>
-    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Back End Dev</li>
-    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2015</li>
+    <li class="canopy">CALCULATOR</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Front End Dev</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2022</li>
   </ul>
   <p class="works-content-p">
   ${card.cardDescription}
@@ -111,13 +111,13 @@ const modalCard = [
     id: 1,
     title: 'Meals DB',
     imageM: './images/Recipe-App.png',
-    imageD: './images/Recipe-App.png',
+    imageD: '.images/Recipe-App.png',
     heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescriptionD:
       "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
     cardDescriptionM:
       "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
-    languagesD: ['github', 'ruby', 'Bootstrap'],
+    languagesD: ['html', 'css', 'javascript'],
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://imaginative-bunny-380575.netlify.app/',
     linkSource: 'https://github.com/TechnoAndy/Meals-DB',
@@ -132,10 +132,40 @@ const modalCard = [
       "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
     cardDescriptionM:
       "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
-    languagesD: ['github', 'ruby', 'Bootstrap'],
+    languagesD: ['html', 'css', 'javascript'],
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://math-magicians-648245.netlify.app',
     linkSource: 'https://github.com/TechnoAndy/math-magicians',
+  },
+  {
+    id: 3,
+    title: 'Seminar',
+    imageM: './images/Seminar.png',
+    imageD: './images/Seminar.png',
+    heading2: ['Seminar', 'Front End Dev', '2022'],
+    cardDescriptionD:
+      "This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.",
+    cardDescriptionM:
+      "This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.",
+    languagesD: ['html', 'css', 'react'],
+    languagesM: ['html', 'css', 'react'],
+    linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
+    linkSource: 'https://github.com/TechnoAndy/Capstone-Project-Module-1',
+  },
+  {
+    id: 4,
+    title: 'Rails Recipe App',
+    imageM: './images/Seminar.png',
+    imageD: './images/Seminar.png',
+    heading2: ['Recipe', 'back End Dev', '2022'],
+    cardDescriptionD:
+      "The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.",
+    cardDescriptionM:
+      "The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.",
+    languagesD: ['ruby', 'postgreSQL', 'RSpec'],
+    languagesM: ['ruby', 'postgreSQL', 'RSpec'],
+    linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
+    linkSource: 'https://github.com/TechnoAndy/Capstone-Project-Module-1',
   },
 ];
 
@@ -148,9 +178,9 @@ const modalCardDisplay = modalCard
             <li class="pop-close"><i class="fa fa-times"></i></li>
                 <h2 class="work-heading">${modeCard.title}</h2>
                 <ul class="dev-date space-date">
-                <li class="canopy">CANOPY</li>
-                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Back End Dev</li>
-                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2015</li>
+                <li class="canopy">MEALS</li>
+                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Front End Dev</li>
+                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2022</li>
               </ul>
               <div class="images">
          <img class="forD-1" src="${modeCard.imageD}" alt="Pop Up Desktop" >
@@ -190,6 +220,7 @@ const modalCardDisplay = modalCard
   </div>
 `,
   ).join('');
+
 
 const modalCards = document.getElementById('modal-cards');
 modalCards.innerHTML += modalCardDisplay;
