@@ -422,6 +422,80 @@ li {
   padding: 15px;
 }
 
+.framework-dropdown-li {
+  text-align: center;
+  border-radius: 6px;
+  list-style-type: none;
+  width: 100%;
+  color: black;
+  background-color: #f7f7f9;
+  border: 1px solid #6070ff;
+  font-size: 17px;
+  padding: 8px 0;
+  transition: transform 0.5 ease-in-out;
+}
+
+.framework-dropdown-li:hover {
+  background-color: #6070ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* .skills-button {
+  display: flex;
+  border: none;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: start;
+} */
+
+.skills-dropdown {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 0.3rem;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+  overflow: hidden;
+}
+
+.skills-dropdown.open-skills-dropdown {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.skills-dropdown-ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+}
+
+.skills-dropdown-li {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  color: black;
+  background-color: #f7f7f9;
+  border: 1px solid #6070ff;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 10px 4px;
+  transition: transform 0.5 ease-in-out;
+}
+
+.skills-dropdown-li:hover {
+  background-color: #6070ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+
 .contact-form {
   background-image: url(images/contactform\ shapes-mobile.png);
   background-repeat: no-repeat;

@@ -241,6 +241,26 @@ popClose.addEventListener('click', () => {
   enableScroll();
 });
 
+// framework dropdown toggle
+
+const framework = document.querySelector('#framework');
+const frameworkMenu = document.querySelector('#framework-menu');
+
+framework.addEventListener('click', () => {
+  framework.classList.toggle('rotate');
+  frameworkMenu.classList.toggle('open-framework-dropdown');
+});
+
+// skills dropdown toggle
+
+const skills = document.querySelector('#skills-arrow');
+const skillsMenu = document.querySelector('#skills-menu');
+
+skills.addEventListener('click', () => {
+  skills.classList.toggle('rotate');
+  skillsMenu.classList.toggle('open-skills-dropdown');
+});
+
 // Email validation
 
 function showMessage(input, message, type) {
