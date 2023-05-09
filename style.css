@@ -335,6 +335,7 @@ li {
 }
 
 .btn,
+.btn-Resume,
 .btn-form {
   width: fit-content;
   text-align: center;
