@@ -96,12 +96,14 @@ const worksCard = cards.map(
     .map((lang) => `<li class="works-badge">${lang}</li>`)
     .join('')}
   </ul>
-  <button class="btn" onclick="showPop(${card.id})"> See Project </button>
+  <button class="btn" onclick="showPop(${cards.id})"> See Project </button>
 </div>
 </div>
 </section>
 `,
 );
+
+
 
 const workCard = document.querySelector('.works');
 workCard.innerHTML += worksCard;
@@ -220,7 +222,6 @@ const modalCardDisplay = modalCard
   </div>
 `,
   ).join('');
-
 
 const modalCards = document.getElementById('modal-cards');
 modalCards.innerHTML += modalCardDisplay;
