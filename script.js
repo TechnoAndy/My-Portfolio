@@ -10,10 +10,12 @@ hamburger.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navList.classList.remove('active');
-}));
+document.querySelectorAll('.nav-item').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navList.classList.remove('active');
+  })
+);
 
 function disableScroll() {
   worksBody.style.filter = 'blur(7px)';
@@ -96,14 +98,13 @@ const worksCard = cards.map(
     .map((lang) => `<li class="works-badge">${lang}</li>`)
     .join('')}
   </ul>
-  <button class="btn" onclick="showPop(${card.id})"> See Project </button>
+  <button class="btn" onclick='showPop(${card.id})> See Project </button>
+
 </div>
 </div>
 </section>
-`,
+`
 );
-
-
 
 const workCard = document.querySelector('.works');
 workCard.innerHTML += worksCard;
@@ -116,9 +117,9 @@ const modalCard = [
     imageD: '.images/Recipe-App.png',
     heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescriptionD:
-      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
+      'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
     cardDescriptionM:
-      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
+      'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
     languagesD: ['html', 'css', 'javascript'],
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://imaginative-bunny-380575.netlify.app/',
@@ -131,9 +132,9 @@ const modalCard = [
     imageD: './images/Math-magicians.png',
     heading2: ['Calculator', 'Front End Dev', '2022'],
     cardDescriptionD:
-      "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
     cardDescriptionM:
-      "This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.",
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
     languagesD: ['html', 'css', 'javascript'],
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://math-magicians-648245.netlify.app',
@@ -146,9 +147,9 @@ const modalCard = [
     imageD: './images/Seminar.png',
     heading2: ['Seminar', 'Front End Dev', '2022'],
     cardDescriptionD:
-      "This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.",
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.',
     cardDescriptionM:
-      "This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.",
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.',
     languagesD: ['html', 'css', 'react'],
     languagesM: ['html', 'css', 'react'],
     linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
@@ -161,9 +162,9 @@ const modalCard = [
     imageD: './images/Seminar.png',
     heading2: ['Recipe', 'back End Dev', '2022'],
     cardDescriptionD:
-      "The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.",
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
     cardDescriptionM:
-      "The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.",
+      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
     languagesD: ['ruby', 'postgreSQL', 'RSpec'],
     languagesM: ['ruby', 'postgreSQL', 'RSpec'],
     linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
@@ -203,25 +204,30 @@ const modalCardDisplay = modalCard
       <div class="column-right-1">
           <ul class="modal-1">
               ${modeCard.languagesM
-    .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join('')}
+                .map((lang) => `<li class="works-badge">${lang}</li>`)
+                .join('')}
           </ul>
           <ul id="miss" class="miss modal-1">
           ${modeCard.languagesD
-    .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join('')}
+            .map((lang) => `<li class="works-badge">${lang}</li>`)
+            .join('')}
           </ul>
           <hr>
           <ul class="modal-1">
-              <li class="modal-3" href="${modeCard.linkLive}">See live <img class="btnimag" src="./images/seeliveIcon.png"></li>
-              <li class="modal-3" href="${modeCard.linkSource}">See Source <i class="fa fa-github"></i></li>
+              <li class="modal-3" href="${
+                modeCard.linkLive
+              }">See live <img class="btnimag" src="./images/seeliveIcon.png"></li>
+              <li class="modal-3" href="${
+                modeCard.linkSource
+              }">See Source <i class="fa fa-github"></i></li>
           </ul>
       </div>
   </div>
       </div>
   </div>
-`,
-  ).join('');
+`
+  )
+  .join('');
 
 const modalCards = document.getElementById('modal-cards');
 modalCards.innerHTML += modalCardDisplay;
@@ -324,7 +330,11 @@ const EMAIL_INVALID = 'Your email address should be in lowercase';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  const emailValid = validateEmail(
+    form.elements.email,
+    EMAIL_REQUIRED,
+    EMAIL_INVALID
+  );
   if (nameValid && emailValid) {
     form.submit();
     form.elements.name.value = '';
@@ -334,7 +344,9 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data with localStorage
-const formDataFromLocalStorage = localStorage.getItem('formData') ? JSON.parse(localStorage.getItem('formData')) : null;
+const formDataFromLocalStorage = localStorage.getItem('formData')
+  ? JSON.parse(localStorage.getItem('formData'))
+  : null;
 const formData = {
   name: formDataFromLocalStorage ? formDataFromLocalStorage.name : '',
   email: formDataFromLocalStorage ? formDataFromLocalStorage.email : '',
