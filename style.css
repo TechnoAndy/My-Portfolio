@@ -335,6 +335,7 @@ li {
 }
 
 .btn,
+.button,
 .btn-form {
   width: fit-content;
   text-align: center;
@@ -375,6 +376,7 @@ li {
 }
 
 .btn,
+.button,
 .btn-form:hover {
   background-color: #6070ff;
   color: white;

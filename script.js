@@ -36,7 +36,7 @@ const cards = [
     id: 1,
     title: 'Meals DB',
     imageM: './images/Meals-DB.png',
-    imageD: '.images/Meals-DB.png',
+    imageD: './images/Meals-DB.png',
     heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescription:
       'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
@@ -74,6 +74,7 @@ const cards = [
   },
 ];
 
+
 const worksCard = cards.map(
   (card, index) => `
 <section class="works ${index}">
@@ -98,13 +99,15 @@ const worksCard = cards.map(
     .map((lang) => `<li class="works-badge">${lang}</li>`)
     .join('')}
   </ul>
-  <button class="btn" onclick='showPop(${card.id})> See Project </button>
+
+  <button class="btn" data-card-id="${card.id}">See Project</button>
 
 </div>
 </div>
 </section>
 `
 );
+
 
 const workCard = document.querySelector('.works');
 workCard.innerHTML += worksCard;
@@ -114,7 +117,7 @@ const modalCard = [
     id: 1,
     title: 'Meals DB',
     imageM: './images/Recipe-App.png',
-    imageD: '.images/Recipe-App.png',
+    imageD: './images/Recipe-App.png',
     heading2: ['Meals', 'Front End Dev', '2022'],
     cardDescriptionD:
       'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
@@ -171,6 +174,18 @@ const modalCard = [
     linkSource: 'https://github.com/TechnoAndy/Capstone-Project-Module-1',
   },
 ];
+
+const btns = document.querySelectorAll('.btn');
+btns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const cardId = btn.dataset.cardId;
+    showPop(cardId);
+  });
+});
+
+function showPop(cardId) {
+  console.log("Button clicked! Card ID: " + cardId);
+}
 
 const modalCardDisplay = modalCard
   .map(
