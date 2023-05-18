@@ -10,10 +10,10 @@ hamburger.addEventListener('click', () => {
 
 document.querySelectorAll('.nav-item').forEach((n) =>
   n.addEventListener('click',
-  () => {
-    hamburger.classList.remove('active');
-    navList.classList.remove('active');
-  }));
+    () => {
+      hamburger.classList.remove('active');
+      navList.classList.remove('active');
+    }));
 
 const cards = [
   {
