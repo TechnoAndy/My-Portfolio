@@ -487,7 +487,7 @@ li {
   border: 1px solid #6070ff;
   font-size: 18px;
   padding: 8px 0;
-  transition: transform 0.5 ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .framework-dropdown-li:hover {
@@ -541,7 +541,7 @@ li {
   border-radius: 6px;
   font-size: 18px;
   padding: 10px 4px;
-  transition: transform 0.5 ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .skills-dropdown-li:hover {
