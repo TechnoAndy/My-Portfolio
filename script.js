@@ -2,8 +2,6 @@
 
 const hamburger = document.querySelector('.bar');
 const navList = document.querySelector('.nav-list');
-/* const body = document.querySelector('.content-section'); */
-const worksBody = document.querySelector('.works');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
@@ -15,20 +13,6 @@ document.querySelectorAll('.nav-item').forEach((n) =>
     hamburger.classList.remove('active');
     navList.classList.remove('active');
   }));
-
-/* function disableScroll() {
-  worksBody.style.filter = 'blur(7px)';
-  const xPos = window.scrollX;
-  const yPos = window.scrollY;
-  window.onscroll = () => {
-    window.scroll(xPos, yPos);
-  };
-} */
-
-/* function enableScroll() {
-  worksBody.style.filter = 'blur(0px)';
-  window.onscroll = '';
-} */
 
 const cards = [
   {
@@ -188,6 +172,9 @@ const modalCard = [
   },
 ];
 
+function showPop() {
+}
+
 const btns = document.querySelectorAll('.btn');
 btns.forEach((btn) => {
   btn.addEventListener('click', () => {
@@ -252,9 +239,6 @@ btns.forEach((btn) => {
     });
   });
 });
-
-function showPop() {
-}
 
 // languages close toggle
 
