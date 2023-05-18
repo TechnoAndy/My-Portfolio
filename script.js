@@ -233,12 +233,8 @@ btns.forEach((btn) => {
 
 <hr>
 <ul class="modal-1">
-  <li class="modal-3" href="${
-    item.linkLive
-  }">See live <img class="btnimag" src="./images/seeliveIcon.png"></li>
-  <li class="modal-3" href="${
-    item.linkSource
-  }">See Source <i class="fa fa-github"></i></li>
+  <a href="${item.linkLive}" target= "_blank" class="modal-3" >See live <img class="btnimag" src="./images/seeliveIcon.png"></a>
+  <a href="${item.linkSource}" target= "_blank" class="modal-3" >See Source <i class="fa fa-github"></i></a>
 </ul>
 </div>
 </div>
