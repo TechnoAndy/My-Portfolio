@@ -370,11 +370,6 @@ li {
   text-decoration: none;
 }
 
-.btn-Resume {
-  background-color: #6070ff;
-  color: white;
-}
-
 .btn,
 .button,
 .btn-form:hover {
@@ -479,7 +474,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  display: flex;
   width: 100%;
 }
 
@@ -559,7 +553,6 @@ li {
 .lang-seperators img {
   width: 640px;
 }
-
 
 .contact-form {
   background-image: url(images/contactform\ shapes-mobile.png);
