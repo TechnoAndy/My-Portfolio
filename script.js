@@ -9,7 +9,8 @@ hamburger.addEventListener('click', () => {
 });
 
 document.querySelectorAll('.nav-item').forEach((n) =>
-  n.addEventListener('click', () => {
+  n.addEventListener('click',
+  () => {
     hamburger.classList.remove('active');
     navList.classList.remove('active');
   }));
@@ -178,7 +179,7 @@ function showPop() {
 const btns = document.querySelectorAll('.btn');
 btns.forEach((btn) => {
   btn.addEventListener('click', () => {
-    const cardId = btn.dataset.cardId;
+    const { cardId } = btn.dataset;
     showPop(cardId);
 
     modalCard.forEach((item, index) => {
