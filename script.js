@@ -2,7 +2,7 @@
 
 const hamburger = document.querySelector('.bar');
 const navList = document.querySelector('.nav-list');
-const body = document.querySelector('.content-section');
+/* const body = document.querySelector('.content-section'); */
 const worksBody = document.querySelector('.works');
 
 hamburger.addEventListener('click', () => {
@@ -14,22 +14,21 @@ document.querySelectorAll('.nav-item').forEach((n) =>
   n.addEventListener('click', () => {
     hamburger.classList.remove('active');
     navList.classList.remove('active');
-  })
-);
+  }));
 
-function disableScroll() {
+/* function disableScroll() {
   worksBody.style.filter = 'blur(7px)';
   const xPos = window.scrollX;
   const yPos = window.scrollY;
   window.onscroll = () => {
     window.scroll(xPos, yPos);
   };
-}
+} */
 
-function enableScroll() {
+/* function enableScroll() {
   worksBody.style.filter = 'blur(0px)';
   window.onscroll = '';
-}
+} */
 
 const cards = [
   {
@@ -112,7 +111,7 @@ const worksCard = cards.map(
 </div>
 </div>
 </section>
-`
+`,
 );
 
 const workCard = document.querySelector('.works');
@@ -198,7 +197,6 @@ btns.forEach((btn) => {
     modalCard.forEach((item, index) => {
       if (index == cardId) {
         const modalCards = document.getElementById('modal-cards');
-        console.log(modalCards);
         const content = `
 
 <div class="card-portfolio-1">
@@ -243,23 +241,19 @@ btns.forEach((btn) => {
        `;
         modalCards.innerHTML = content;
         const boxModal = document.querySelector('.card-portfolio-1');
-        const openModal = document.querySelectorAll('.btn');
 
         boxModal.style.display = 'block';
 
         const popClose = document.querySelector('.pop-close');
         popClose.addEventListener('click', () => {
           boxModal.style.display = 'none';
-          //    body.style.filter = 'none';
-          //    enableScroll();
         });
       }
     });
   });
 });
 
-function showPop(id) {
-  /* console.log('Button clicked! Card ID: ' + id); */
+function showPop() {
 }
 
 // languages close toggle
@@ -347,7 +341,7 @@ form.addEventListener('submit', (event) => {
   const emailValid = validateEmail(
     form.elements.email,
     EMAIL_REQUIRED,
-    EMAIL_INVALID
+    EMAIL_INVALID,
   );
   if (nameValid && emailValid) {
     form.submit();
