@@ -174,7 +174,7 @@ const modalCard = [
     id: 4,
     title: 'Space Travellers Hub',
     imageM: './images/Space-travel.png',
-    imageD: '.images/Space-travel.png',
+    imageD: './images/Space-travel.png',
     heading2: ['Mission'],
     heading3: ['Front End Dev'],
     heading4: ['2022'],
@@ -218,10 +218,10 @@ btns.forEach((btn) => {
 <div>
 <div class="row">
 <div class="column-left-1">
-<p class="forD-1">
+<p class="forM-1">
   ${item.cardDescriptionM}
 </p>
-<p class="forM-1">
+<p class="forD-1">
   ${item.cardDescriptionD}
 </p>
 
