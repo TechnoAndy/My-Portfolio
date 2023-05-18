@@ -70,15 +70,15 @@ const cards = [
   },
   {
     id: 4,
-    title: 'Rails Recipe App',
-    imageM: './images/image4desktop.png',
-    imageD: '.images/image4desktop.png',
-    heading2: ['Recipe'],
-    heading3: ['Back End Dev'],
+    title: 'Space Travellers Hub',
+    imageM: './images/Space-travel.png',
+    imageD: '.images/Space-travel.png',
+    heading2: ['Mission'],
+    heading3: ['Front End Dev'],
     heading4: ['2022'],
     cardDescription:
-      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
-    languages: ['ruby', 'postgreSQL', 'RSpec'],
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
+    languages: ['react', 'redux', 'css'],
   },
 ];
 
@@ -172,20 +172,20 @@ const modalCard = [
   },
   {
     id: 4,
-    title: 'Rails Recipe App',
-    imageM: './images/Seminar.png',
-    imageD: './images/Seminar.png',
-    heading2: ['Recipe'],
-    heading3: ['Back End Dev'],
+    title: 'Space Travellers Hub',
+    imageM: './images/Space-travel.png',
+    imageD: '.images/Space-travel.png',
+    heading2: ['Mission'],
+    heading3: ['Front End Dev'],
     heading4: ['2022'],
     cardDescriptionD:
-      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
     cardDescriptionM:
-      'The Recipe app keeps track of all your recipes, ingredients, and inventory. It allows you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.',
-    languagesD: ['ruby', 'postgreSQL', 'RSpec'],
-    languagesM: ['ruby', 'postgreSQL', 'RSpec'],
-    linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
-    linkSource: 'https://github.com/TechnoAndy/Capstone-Project-Module-1',
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
+    languagesD: ['react', 'redux', 'css'],
+    languagesM: ['react', 'redux', 'css'],
+    linkLive: 'https://cool-cranachan-415bda.netlify.app/',
+    linkSource: 'https://github.com/TechnoAndy/space-travelers-hub',
   },
 ];
 
