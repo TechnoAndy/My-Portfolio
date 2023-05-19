@@ -22,7 +22,7 @@ git clone <URL> '(https://github.com/TechnoAndy/My-Portfolio.git)' in your termi
 
 ## Live Project Demo
 
-[Live Demo Link](https://technoandy.github.io/My-Portfolio/)
+[Live Demo Link](https://lovely-elf-a68041.netlify.app/)
 
 ## Authors
 
