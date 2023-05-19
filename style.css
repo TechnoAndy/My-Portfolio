@@ -131,6 +131,7 @@ nav {
 
 .content-text-p {
   position: static;
+  text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -285,7 +286,7 @@ p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   color: #172b4d;
   list-style: none;
 }
@@ -303,7 +304,7 @@ p {
   list-style: none;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
 }
 
@@ -334,6 +335,7 @@ li {
 }
 
 .btn,
+.button,
 .btn-form {
   width: fit-content;
   text-align: center;
@@ -351,7 +353,25 @@ li {
   text-decoration: none;
 }
 
+.btn-Resume {
+  width: fit-content;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #6070ff;
+  padding: 12px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: 30px;
+  text-decoration: none;
+}
+
 .btn,
+.button,
 .btn-form:hover {
   background-color: #6070ff;
   color: white;
@@ -420,6 +440,118 @@ li {
 .png-2 {
   height: 10px;
   padding: 15px;
+}
+
+.framework-button {
+  display: flex;
+  border: none;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: start;
+}
+
+.framework-dropdown {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 0.4rem;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+  overflow: hidden;
+}
+
+.framework-dropdown.open-framework-dropdown {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.framework-dropdown-ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 100%;
+}
+
+.framework-dropdown-li {
+  text-align: center;
+  border-radius: 6px;
+  list-style-type: none;
+  width: 100%;
+  color: black;
+  background-color: #f7f7f9;
+  border: 1px solid #6070ff;
+  font-size: 18px;
+  padding: 8px 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.framework-dropdown-li:hover {
+  background-color: #6070ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.skills-button {
+  display: flex;
+  border: none;
+  background-color: white;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: start;
+}
+
+.skills-dropdown {
+  width: 0;
+  height: 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 0.3rem;
+  opacity: 0;
+  transition: opacity 600ms ease-in-out;
+  overflow: hidden;
+}
+
+.skills-dropdown.open-skills-dropdown {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+}
+
+.skills-dropdown-ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+}
+
+.skills-dropdown-li {
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+  color: black;
+  background-color: #f7f7f9;
+  border: 1px solid #6070ff;
+  border-radius: 6px;
+  font-size: 18px;
+  padding: 10px 4px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.skills-dropdown-li:hover {
+  background-color: #6070ff;
+  color: white;
+  transform: scale(1.1);
+}
+
+.lang-seperators img {
+  width: 640px;
 }
 
 .contact-form {
@@ -540,6 +672,7 @@ form {
   padding: 8px 16px;
   font-size: 15px;
   text-align: center;
+  cursor: pointer;
 }
 
 .modal-2 {
@@ -770,6 +903,7 @@ form {
 
   .img {
     width: 48%;
+    padding-top: 50px;
   }
 
   .align-center-text {
@@ -822,12 +956,6 @@ form {
   .png-2 {
     width: 10px;
     height: 15px;
-  }
-
-  .png li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .btn:hover {

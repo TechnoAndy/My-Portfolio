@@ -2,79 +2,72 @@
 
 const hamburger = document.querySelector('.bar');
 const navList = document.querySelector('.nav-list');
-const body = document.querySelector('.content-section');
-const worksBody = document.querySelector('.works');
 
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
   navList.classList.toggle('active');
 });
 
-document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navList.classList.remove('active');
-}));
-
-function disableScroll() {
-  worksBody.style.filter = 'blur(7px)';
-  const xPos = window.scrollX;
-  const yPos = window.scrollY;
-  window.onscroll = () => {
-    window.scroll(xPos, yPos);
-  };
-}
-
-function enableScroll() {
-  worksBody.style.filter = 'blur(0px)';
-  window.onscroll = '';
-}
+document.querySelectorAll('.nav-item').forEach((n) => n.addEventListener('click',
+  () => {
+    hamburger.classList.remove('active');
+    navList.classList.remove('active');
+  }));
 
 const cards = [
   {
     id: 1,
     title: 'Meals DB',
-    imageM: './images/Recipe-App.png',
-    imageD: './images/Recipe-App.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    imageM: './images/Meals-DB.png',
+    imageD: '.images/Meals-DB.png',
+    heading2: ['Meals'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
     cardDescription:
       'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
-    languages: ['html', 'css', 'javascript'],
+    languages: ['javascript', 'ES6', 'webpack'],
   },
   {
     id: 2,
-    title: 'Multi-Post Stories',
-    imageM: './images/image2desktop.png',
-    imageD: '.images/image2desktop.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Math Magicians',
+    imageM: './images/Math-magicians.png',
+    imageD: '.images/Math-magicians.png',
+    heading2: ['Calculator'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
+    languages: ['html', 'css', 'react'],
   },
   {
     id: 3,
-    title: 'Facebook 360',
-    imageM: './images/image3desktop.png',
-    imageD: '.images/image3desktop.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Seminar',
+    imageM: './images/Seminar.png',
+    imageD: '.images/Seminar.png',
+    heading2: ['Seminar'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available ',
     languages: ['html', 'css', 'javascript'],
   },
   {
     id: 4,
-    title: 'Uber Navigation',
-    imageM: './images/image4desktop.png',
-    imageD: '.images/image4desktop.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    title: 'Space Travellers Hub',
+    imageM: './images/Space-travel.png',
+    imageD: '.images/Space-travel.png',
+    heading2: ['Mission'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
     cardDescription:
-      'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    languages: ['html', 'css', 'javascript'],
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
+    languages: ['react', 'redux', 'css'],
   },
 ];
 
 const worksCard = cards.map(
-  (card, index) => `
-<section class="works ${index}">
+  (card, id) => `
+<section class="works ${id}">
 <div class="work-card">
 <img
   class="img"
@@ -82,11 +75,11 @@ const worksCard = cards.map(
   alt="SnapshootPortfolio02-img"
 />
 <div class="align-center-text">
-  <h3 class="work-heading ${index}">${card.title}</h3>
+  <h3 class="work-heading ${id}">${card.title}</h3>
   <ul class="dev-date">
-    <li class="canopy">CANOPY</li>
-    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Back End Dev</li>
-    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2015</li>
+    <li class="canopy">${card.heading2}</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;${card.heading3}</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;${card.heading4}</li>
   </ul>
   <p class="works-content-p">
   ${card.cardDescription}
@@ -96,7 +89,9 @@ const worksCard = cards.map(
     .map((lang) => `<li class="works-badge">${lang}</li>`)
     .join('')}
   </ul>
-  <button class="btn" onclick="showPop(${card.id})"> See Project </button>
+
+  <button class="btn" data-card-id="${id}">See Project</button>
+
 </div>
 </div>
 </section>
@@ -110,89 +105,169 @@ const modalCard = [
   {
     id: 1,
     title: 'Meals DB',
-    imageM: './images/Recipe-App.png',
-    imageD: './images/Recipe-App.png',
-    heading2: ['Canopy', 'Back End Dev', '2015'],
+    imageM: './images/Meals-DB.png',
+    imageD: './images/Meals-DB.png',
+    heading2: ['Meals'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
     cardDescriptionD:
-      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
+      'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
     cardDescriptionM:
-      "This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.",
-    languagesD: ['github', 'ruby', 'Bootstrap'],
+      'This app is built using an API to access great recipes for people that love to cook. This is aimed at making it easier to store the recipes online and not have to keep a shelf full of recipe books.',
+    languagesD: ['html', 'css', 'javascript'],
     languagesM: ['html', 'css', 'javascript'],
     linkLive: 'https://imaginative-bunny-380575.netlify.app/',
     linkSource: 'https://github.com/TechnoAndy/Meals-DB',
   },
+  {
+    id: 2,
+    title: 'Math Magicians',
+    imageM: './images/Math-magicians.png',
+    imageD: './images/Math-magicians.png',
+    heading2: ['Calculator'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
+    cardDescriptionD:
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
+    cardDescriptionM:
+      'This is a front-end mobile application that performs calculations for its users. This app allows individuals to enter mathematical equations and receive an immediate answer. It includes features such as basic arithmetic functions, scientific calculations, and a user-friendly interface for ease of use.',
+    languagesD: ['html', 'css', 'javascript'],
+    languagesM: ['html', 'css', 'javascript'],
+    linkLive: 'https://math-magicians-648245.netlify.app',
+    linkSource: 'https://github.com/TechnoAndy/math-magicians',
+  },
+  {
+    id: 3,
+    title: 'Seminar',
+    imageM: './images/Seminar.png',
+    imageD: './images/Seminar.png',
+    heading2: ['Seminar'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
+    cardDescriptionD:
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.',
+    cardDescriptionM:
+      'This is an app where a user can book a seat at a seminar, information about feature speakers and the program is available.',
+    languagesD: ['html', 'css', 'react'],
+    languagesM: ['html', 'css', 'react'],
+    linkLive: 'https://technoandy.github.io/Capstone-Project-Module-1/',
+    linkSource: 'https://github.com/TechnoAndy/Capstone-Project-Module-1',
+  },
+  {
+    id: 4,
+    title: 'Space Travellers Hub',
+    imageM: './images/Space-travel.png',
+    imageD: './images/Space-travel.png',
+    heading2: ['Mission'],
+    heading3: ['Front End Dev'],
+    heading4: ['2022'],
+    cardDescriptionD:
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
+    cardDescriptionM:
+      'This is a web application for a company that provides commercial and scientific space travel services. This application allows users to book rockets and join selected space missions.',
+    languagesD: ['react', 'redux', 'css'],
+    languagesM: ['react', 'redux', 'css'],
+    linkLive: 'https://cool-cranachan-415bda.netlify.app/',
+    linkSource: 'https://github.com/TechnoAndy/space-travelers-hub',
+  },
 ];
 
-const modalCardDisplay = modalCard
-  .map(
-    (modeCard) => `
+function showPop() {
+}
+
+const btns = document.querySelectorAll('.btn');
+btns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const { cardId } = btn.dataset;
+    showPop(cardId);
+
+    modalCard.forEach((item, index) => {
+      if (index == cardId) {
+        const modalCards = document.getElementById('modal-cards');
+        const content = `
 
 <div class="card-portfolio-1">
 
-            <li class="pop-close"><i class="fa fa-times"></i></li>
-                <h2 class="work-heading">${modeCard.title}</h2>
-                <ul class="dev-date space-date">
-                <li class="canopy">CANOPY</li>
-                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;Back End Dev</li>
-                <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;2015</li>
-              </ul>
-              <div class="images">
-         <img class="forD-1" src="${modeCard.imageD}" alt="Pop Up Desktop" >
-      <img class="forM-1" src="${modeCard.imageM}" alt="Pop Up Mobile" >
+<li class="pop-close"><i class="fa fa-times"></i></li>
+    <h2 class="work-heading">${item.title}</h2>
+    <ul class="dev-date space-date">
+    <li class="canopy">${item.heading2}</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;${item.heading3}</li>
+    <li class="bullet">&#9679;&nbsp;&nbsp;&nbsp;${item.heading4}</li>
+  </ul>
+  <div class="images">
+<img class="forD-1" src="${item.imageD}" alt="Pop Up Desktop" >
+<img class="forM-1" src="${item.imageM}" alt="Pop Up Mobile" >
 
-         </div>
-      <div>
-      <div class="row">
-      <div class="column-left-1">
-          <p class="forD-1">
-              ${modeCard.cardDescriptionM}
-          </p>
-          <p class="forM-1">
-              ${modeCard.cardDescriptionM}
-          </p>
+</div>
+<div>
+<div class="row">
+<div class="column-left-1">
+<p class="forM-1">
+  ${item.cardDescriptionM}
+</p>
+<p class="forD-1">
+  ${item.cardDescriptionD}
+</p>
 
-      </div>
-      <div class="column-right-1">
-          <ul class="modal-1">
-              ${modeCard.languagesM
-    .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join('')}
-          </ul>
-          <ul id="miss" class="miss modal-1">
-          ${modeCard.languagesD
-    .map((lang) => `<li class="works-badge">${lang}</li>`)
-    .join('')}
-          </ul>
-          <hr>
-          <ul class="modal-1">
-              <li class="modal-3" href="${modeCard.linkLive}">See live <img class="btnimag" src="./images/seeliveIcon.png"></li>
-              <li class="modal-3" href="${modeCard.linkSource}">See Source <i class="fa fa-github"></i></li>
-          </ul>
-      </div>
-  </div>
-      </div>
-  </div>
-`,
-  ).join('');
+</div>
+<div class="column-right-1">
+<ul class="modal-1">
+  ${item.languagesM.map((lang) => `<li class="works-badge">${lang}</li>`)}
+</ul>
 
-const modalCards = document.getElementById('modal-cards');
-modalCards.innerHTML += modalCardDisplay;
-const boxModal = document.querySelector('.card-portfolio-1');
-const openModal = document.querySelectorAll('.btn');
+<hr>
+<ul class="modal-1">
+  <a href="${item.linkLive}" target= "_blank" class="modal-3" >See live <img class="btnimag" src="./images/seeliveIcon.png"></a>
+  <a href="${item.linkSource}" target= "_blank" class="modal-3" >See Source <i class="fa fa-github"></i></a>
+</ul>
+</div>
+</div>
+</div>
+</div>
+       `;
+        modalCards.innerHTML = content;
+        const boxModal = document.querySelector('.card-portfolio-1');
 
-openModal.forEach((open) => {
-  open.addEventListener('click', () => {
-    boxModal.style.display = 'block';
-    disableScroll();
+        boxModal.style.display = 'block';
+
+        const popClose = document.querySelector('.pop-close');
+        popClose.addEventListener('click', () => {
+          boxModal.style.display = 'none';
+        });
+      }
+    });
   });
 });
 
-const popClose = document.querySelector('.pop-close');
-popClose.addEventListener('click', () => {
-  boxModal.style.display = 'none';
-  body.style.filter = 'none';
-  enableScroll();
+// languages close toggle
+
+const langArrowClick = document.querySelector('#arrow-up');
+const langMenu = document.querySelector('#lang-menu');
+
+langArrowClick.addEventListener('click', () => {
+  langArrowClick.classList.toggle('anti-rotate');
+  langMenu.classList.toggle('close-lang-menu');
+});
+
+// framework dropdown toggle
+
+const framework = document.querySelector('#framework');
+const frameworkMenu = document.querySelector('#framework-menu');
+
+framework.addEventListener('click', () => {
+  framework.classList.toggle('rotate');
+  frameworkMenu.classList.toggle('open-framework-dropdown');
+});
+
+// skills dropdown toggle
+
+const skills = document.querySelector('#skills-arrow');
+const skillsMenu = document.querySelector('#skills-menu');
+
+skills.addEventListener('click', () => {
+  skills.classList.toggle('rotate');
+  skillsMenu.classList.toggle('open-skills-dropdown');
 });
 
 // Email validation
@@ -247,7 +322,11 @@ const EMAIL_INVALID = 'Your email address should be in lowercase';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const nameValid = hasValue(form.elements.name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  const emailValid = validateEmail(
+    form.elements.email,
+    EMAIL_REQUIRED,
+    EMAIL_INVALID,
+  );
   if (nameValid && emailValid) {
     form.submit();
     form.elements.name.value = '';
@@ -257,7 +336,9 @@ form.addEventListener('submit', (event) => {
 });
 
 // preserve data with localStorage
-const formDataFromLocalStorage = localStorage.getItem('formData') ? JSON.parse(localStorage.getItem('formData')) : null;
+const formDataFromLocalStorage = localStorage.getItem('formData')
+  ? JSON.parse(localStorage.getItem('formData'))
+  : null;
 const formData = {
   name: formDataFromLocalStorage ? formDataFromLocalStorage.name : '',
   email: formDataFromLocalStorage ? formDataFromLocalStorage.email : '',
