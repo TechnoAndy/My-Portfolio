@@ -712,6 +712,7 @@ form {
   top: 20px;
   right: 20px;
   color: #6b778c;
+  cursor: pointer;
 }
 
 .card-portfolio-1 {
