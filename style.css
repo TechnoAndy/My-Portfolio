@@ -902,8 +902,9 @@ form {
   }
 
   .img {
-    width: 48%;
-    padding-top: 50px;
+    width: 55%;
+    height: 80%;
+    padding-top: 25px;
   }
 
   .align-center-text {
